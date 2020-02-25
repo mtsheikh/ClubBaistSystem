@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c7055954-2288-4e60-90b2-f6acf2a7c6a9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/TeeTimes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Shareholder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ViewMemberDues.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ViewMemberDues.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/ClubBaistUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/TeeTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/GoldMember.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/SilverMember.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/MembershipApplication.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/MemberAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/BronzeMember.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/DailyTeeSheet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Golfer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/ProShopStaff.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Areas/Identity/Pages/Account/Login.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/MemberAccountEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/DailyTeeSheets.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/ClubBaistUsers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/SubmitStandingTeeTimeRequest.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/CBS.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Clerk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Areas/Identity/Pages/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Intermediate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/ShareholderSpouse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Associate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Privacy.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/SubmitStandingTeeTimeRequest.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Index.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Privacy.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/85188C3D-9395-441A-A9A2-EE4A6D237F4F/11C/ResourceInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8CAA9420-4A42-47F5-9C7A-E21EC24CB6FC/12/RazorView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDA37216-A7C9-47F0-96EE-64945CF49EBF/27/ExecutorFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDA37216-A7C9-47F0-96EE-64945CF49EBF/2D/PageActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4635B654-3B9D-418F-B67C-3820EC5AFD80/5/TagHelperRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/EditTeeTime.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/AspNetUserTokens.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/EditTeeTime.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ReserveTeeTime.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/AspNetUsers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ReserveTeeTime.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/AspNetUserLogins.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/AspNetUserClaims.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/AspNetRoles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/AspNetRoleClaims.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Pages/Privacy.cshtml" />
+        <option value="$PROJECT_DIR$/Domain/AspNetUsers.cs" />
+        <option value="$PROJECT_DIR$/Domain/GoldMember.cs" />
+        <option value="$PROJECT_DIR$/Domain/TeeTime.cs" />
+        <option value="$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" />
+        <option value="$PROJECT_DIR$/Domain/SilverMember.cs" />
+        <option value="$PROJECT_DIR$/Domain/BronzeMember.cs" />
+        <option value="$PROJECT_DIR$/Domain/ClubBaistUser.cs" />
+        <option value="$PROJECT_DIR$/Domain/ProShopStaff.cs" />
+        <option value="$PROJECT_DIR$/Domain/Golfer.cs" />
+        <option value="$PROJECT_DIR$/Domain/Shareholder.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" />
+        <option value="$PROJECT_DIR$/Domain/DailyTeeSheet.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/DailyTeeSheets.cs" />
+        <option value="$PROJECT_DIR$/Domain/Associate.cs" />
+        <option value="$PROJECT_DIR$/Domain/ShareholderSpouse.cs" />
+        <option value="$PROJECT_DIR$/Domain/Intermediate.cs" />
+        <option value="$PROJECT_DIR$/Domain/Clerk.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/ClubBaistUsers.cs" />
+        <option value="$PROJECT_DIR$/Pages/EditTeeTime.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/SubmitStandingTeeTimeRequest.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/SubmitStandingTeeTimeRequest.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/Index.cshtml.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/TeeTimes.cs" />
+        <option value="$PROJECT_DIR$/Domain/MembershipApplication.cs" />
+        <option value="$PROJECT_DIR$/Pages/ReserveTeeTime.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml" />
+        <option value="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" />
+        <option value="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" />
+        <option value="$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Domain/MemberAccountEntry.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/CBS.cs" />
+        <option value="$PROJECT_DIR$/Pages/ReserveTeeTime.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/EditTeeTime.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/ViewMemberDues.cshtml.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs" />
+        <option value="$PROJECT_DIR$/Domain/MemberAccount.cs" />
+        <option value="$PROJECT_DIR$/Pages/ViewMemberDues.cshtml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XoHFBLkuc59RcjdK09xBuMzmE7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.ClubBaistSystem">
+    <configuration name="ClubBaistSystem" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ClubBaistSystem.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="ClubBaistSystem" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClubBaistSystem: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ClubBaistSystem.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7055954-2288-4e60-90b2-f6acf2a7c6a9" name="Default Changelist" comment="" />
+      <created>1581705422663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581705422663</updated>
+      <workItem from="1581705428329" duration="22349000" />
+      <workItem from="1581858643812" duration="6214000" />
+      <workItem from="1581888027455" duration="15510000" />
+      <workItem from="1582004967189" duration="14991000" />
+      <workItem from="1582142627273" duration="6723000" />
+      <workItem from="1582612699268" duration="202000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="837" y="242" key="#xdebugger.evaluate" timestamp="1581858914796">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="837" y="242" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1581858914796" />
+    <state x="718" y="401" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1581724519243">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="718" y="401" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1080@0.0.1920.1080" timestamp="1581724519243" />
+    <state width="566" height="466" key="DebuggerActiveHint" timestamp="1582149905018">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="566" height="466" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1582149905018" />
+    <state width="938" height="362" key="GridCell.Tab.0.bottom" timestamp="1582152090665">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
+    <state width="938" height="362" key="GridCell.Tab.0.center" timestamp="1582152090664">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090664" />
+    <state width="938" height="362" key="GridCell.Tab.0.left" timestamp="1582152090664">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090664" />
+    <state width="938" height="362" key="GridCell.Tab.0.right" timestamp="1582152090665">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
+    <state width="938" height="362" key="GridCell.Tab.1.bottom" timestamp="1582152090665">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
+    <state width="938" height="362" key="GridCell.Tab.1.center" timestamp="1582152090665">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
+    <state width="938" height="362" key="GridCell.Tab.1.left" timestamp="1582152090665">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
+    <state width="938" height="362" key="GridCell.Tab.1.right" timestamp="1582152090665">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
+    <state width="938" height="362" key="GridCell.Tab.2.bottom" timestamp="1582152090666">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
+    <state width="938" height="362" key="GridCell.Tab.2.center" timestamp="1582152090666">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
+    <state width="938" height="362" key="GridCell.Tab.2.left" timestamp="1582152090666">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
+    <state width="938" height="362" key="GridCell.Tab.2.right" timestamp="1582152090666">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
+    <state width="938" height="362" key="GridCell.Tab.3.bottom" timestamp="1582152090667">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090667" />
+    <state width="938" height="362" key="GridCell.Tab.3.center" timestamp="1582152090666">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
+    <state width="938" height="362" key="GridCell.Tab.3.left" timestamp="1582152090666">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
+    <state width="938" height="362" key="GridCell.Tab.3.right" timestamp="1582152090666">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
+    <state width="938" height="362" key="GridCell.Tab.4.bottom" timestamp="1582152090667">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.4.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090667" />
+    <state width="938" height="362" key="GridCell.Tab.4.center" timestamp="1582152090667">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.4.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090667" />
+    <state width="938" height="362" key="GridCell.Tab.4.left" timestamp="1582152090667">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.4.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090667" />
+    <state width="938" height="362" key="GridCell.Tab.4.right" timestamp="1582152090667">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="362" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090667" />
+    <state x="776" y="240" key="RiderGenerateDialog" timestamp="1581724643839">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="776" y="240" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1581724643839" />
+    <state x="461" y="182" key="SettingsEditor" timestamp="1582612902033">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1582612902033" />
+    <state width="968" height="548" key="XDebugger.FullValuePopup" timestamp="1581985790577">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="968" height="548" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1581985790577" />
+    <state x="601" y="265" width="700" height="530" key="recent.locations.popup" timestamp="1581801247757">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="601" y="265" width="700" height="530" key="recent.locations.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581801247757" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1582139389497">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582139389497" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1582612855975">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="288" y="0" width="1344" height="1076" key="search.everywhere.popup.inPresentationMode" timestamp="1581730006807">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="288" y="0" width="1344" height="1076" key="search.everywhere.popup.inPresentationMode/0.0.1920.1080@0.0.1920.1080" timestamp="1581730006807" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582612855975" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs</url>
+          <line>37</line>
+          <properties documentPath="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" initialLine="37">
+            <startOffsets>
+              <option value="2833" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2851" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs</url>
+          <line>39</line>
+          <properties documentPath="$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs" initialLine="37">
+            <startOffsets>
+              <option value="1812" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1845" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary" fieldName="Count" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="LaunchSettings">
+        <watch expression="User.IsInRole(&quot;ProShop&quot;)" />
+        <watch expression="Model.RequestedDailyTeeSheet.Date" />
+        <watch expression="DateTime.Today" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

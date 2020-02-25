@@ -1,0 +1,227 @@
+﻿@page
+@model ClubBaistSystem.Pages.EditTeeTime
+@{
+    ViewData["Title"] = "Edit TeeTime";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewData["Title"]</h1>
+<form method="post">
+     <a asp-page="/ReserveTeeTime" class="btn btn-info" role="button">View DailyTeeSheet</a>
+        <br />
+        <br />
+        <p>Golfer Information: </p> 
+        @if (User.IsInRole("ProShop") || User.IsInRole("Clerk") || Model.AuthenticatedUser.Id == Model.SelectedTeeTime.BookerId)
+        {
+            <div class="form-group">
+                <label asp-for="ReservedGolfer1Name"/>  
+                <input asp-for="ReservedGolfer1Name"/>
+                <span asp-validation-for="ReservedGolfer1Name" class="text-danger"></span>
+                @{
+                    if (Model.ReservedGolfer1Name == null)
+                    {
+                        <button type="submit" name="Submit" value="cancelForGolferOne" class="btn btn-dark"  disabled="disabled" >Cancel Golfer</button>
+                    }
+                    else
+                    {
+                        <button type="submit" name="Submit" value="cancelForGolferOne" class="btn btn-dark">Cancel Golfer</button>
+                        @if (User.IsInRole("ProShop"))
+                        {
+                            <text>&nbsp;</text>
+                            @:&nbsp;
+                            <input asp-for="ReservedGolfer1CheckedIn" type="checkbox" class="form-check-inline">
+                            <label class="form-check-inline" asp-for="ReservedGolfer1CheckedIn">Check-In Golfer</label>
+                        }
+                    }
+                }
+            </div>
+            <div class="form-group">
+                <label asp-for="ReservedGolfer2Name"/>
+                <input asp-for="ReservedGolfer2Name"/>
+                <span asp-validation-for="ReservedGolfer2Name" class="text-danger"></span>
+                @{
+                    if (Model.ReservedGolfer2Name == null)
+                    {
+                        <button type="submit" name="Submit" value="cancelForGolferTwo" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                    }
+                    else
+                    {
+                        <button type="submit" name="Submit" value="cancelForGolferTwo" class="btn btn-dark">Cancel Golfer</button>
+                        @if (User.IsInRole("ProShop"))
+                        {
+                            <text>&nbsp;</text>
+                            @:&nbsp;
+                            <input asp-for="ReservedGolfer2CheckedIn" type="checkbox" class="form-check-inline">
+                            <label class="form-check-inline" asp-for="ReservedGolfer2CheckedIn">Check-In Golfer</label>
+                        }
+                    }
+                } 
+            </div>
+            <div class="form-group">
+                <label asp-for="ReservedGolfer3Name"/>
+                <input asp-for="ReservedGolfer3Name"/>
+                <span asp-validation-for="ReservedGolfer3Name" class="text-danger"></span>
+                @{
+                    if (Model.ReservedGolfer3Name == null)
+                    {
+                        <button type="submit" name="Submit" value="cancelForGolferThree" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                    }
+                    else
+                    {
+                        <button type="submit" name="Submit" value="cancelForGolferThree" class="btn btn-dark">Cancel Golfer</button>
+                        @if (User.IsInRole("ProShop"))
+                        {
+                            <text>&nbsp;</text>
+                            @:&nbsp;
+                            <input asp-for="ReservedGolfer3CheckedIn" type="checkbox" class="form-check-inline">
+                            <label class="form-check-inline" asp-for="ReservedGolfer3CheckedIn">Check-In Golfer</label>
+                        }
+                    }
+                }                
+            </div>
+            <div class="form-group">
+                <label asp-for="ReservedGolfer4Name"/>
+                <input asp-for="ReservedGolfer4Name"/>
+                <span asp-validation-for="ReservedGolfer4Name" class="text-danger"></span>
+                @{
+                    if (Model.ReservedGolfer4Name == null)
+                    {
+                        <button type="submit" name="Submit" value="cancelForGolferFour" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                    }
+                    else
+                    {
+                        <button type="submit" name="Submit" value="cancelForGolferFour" class="btn btn-dark">Cancel Golfer</button>
+                        @if (User.IsInRole("ProShop"))
+                        {
+                            <text>&nbsp;</text>
+                            @:&nbsp;
+                            <input asp-for="ReservedGolfer4CheckedIn" type="checkbox" class="form-check-inline">
+                            <label class="form-check-inline" asp-for="ReservedGolfer4CheckedIn">Check-In Golfer</label>
+                        }
+                    }
+                }
+            </div>
+        }
+        else
+        {
+            <div class="form-group">
+                <label asp-for="ReservedGolfer1Name"/>
+                @{
+                    if (Model.ReservedGolfer1Name == null)
+                    {
+                        <input asp-for="ReservedGolfer1Name"/>
+                        <span asp-validation-for="ReservedGolfer1Name" class="text-danger"></span>
+                        <button type="submit" name="Submit" value="cancelForGolferOne" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                    }
+                    else
+                    {
+                        if (Model.AuthenticatedUser.FullName == Model.ReservedGolfer1Name)
+                        {
+                            <input asp-for="ReservedGolfer1Name" readonly="readonly"/>
+                            <span asp-validation-for="ReservedGolfer1Name" class="text-danger"></span>
+                            <button type="submit" name="Submit" value="cancelForGolferOne" class="btn btn-dark">Cancel Golfer</button>
+                        }
+                        else
+                        {
+                            <input asp-for="ReservedGolfer1Name" readonly="readonly"/>
+                            <span asp-validation-for="ReservedGolfer1Name" class="text-danger"></span>
+                            <button type="submit" name="Submit" value="cancelForGolferOne" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                        }
+                    }
+                }
+            </div>
+            <div class="form-group">
+                <label asp-for="ReservedGolfer2Name"/>
+                @{
+                    if (Model.ReservedGolfer2Name == null)
+                    {
+                        <input asp-for="ReservedGolfer2Name"/>
+                        <span asp-validation-for="ReservedGolfer2Name" class="text-danger"></span>
+                        <button type="submit" name="Submit" value="cancelForGolferTwo" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                    }
+                    else
+                    {
+                        if (Model.AuthenticatedUser.FullName == Model.ReservedGolfer2Name)
+                        {
+                            <input asp-for="ReservedGolfer2Name" readonly="readonly"/>
+                            <span asp-validation-for="ReservedGolfer2Name" class="text-danger"></span>
+                            <button type="submit" name="Submit" value="cancelForGolferTwo" class="btn btn-dark">Cancel Golfer</button>
+                        }
+                        else
+                        {
+                            <input asp-for="ReservedGolfer2Name" readonly="readonly"/>
+                            <span asp-validation-for="ReservedGolfer2Name" class="text-danger"></span>
+                            <button type="submit" name="Submit" value="cancelForGolferTwo" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                        }
+                    }
+                }
+            </div>
+            <div class="form-group">
+                <label asp-for="ReservedGolfer3Name"/>
+                @{
+                    if (Model.ReservedGolfer3Name == null)
+                    {
+                        <input asp-for="ReservedGolfer3Name"/>
+                        <span asp-validation-for="ReservedGolfer3Name" class="text-danger"></span>
+                        <button type="submit" name="Submit" value="cancelForGolferThree" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                    }
+                    else
+                    {
+                        if (Model.AuthenticatedUser.FullName == Model.ReservedGolfer3Name)
+                        {
+                            <input asp-for="ReservedGolfer3Name" readonly="readonly"/>
+                            <span asp-validation-for="ReservedGolfer3Name" class="text-danger"></span>
+                            <button type="submit" name="Submit" value="cancelForGolferThree" class="btn btn-dark">Cancel Golfer</button>
+                        }
+                        else
+                        {
+                            <input asp-for="ReservedGolfer3Name" readonly="readonly"/>
+                            <span asp-validation-for="ReservedGolfer3Name" class="text-danger"></span>
+                            <button type="submit" name="Submit" value="cancelForGolferThree" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                        }
+                    }
+                }
+            </div>
+            <div class="form-group">
+                <label asp-for="ReservedGolfer4Name"/>
+                @{
+                    if (Model.ReservedGolfer4Name == null)
+                    {
+                        <input asp-for="ReservedGolfer4Name"/>
+                        <span asp-validation-for="ReservedGolfer4Name" class="text-danger"></span>
+                        <button type="submit" name="Submit" value="cancelForGolferFour" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                    }
+                    else
+                    {
+                        if (Model.AuthenticatedUser.FullName == Model.ReservedGolfer4Name)
+                        {
+                            <input asp-for="ReservedGolfer4Name" readonly="readonly"/>
+                            <span asp-validation-for="ReservedGolfer4Name" class="text-danger"></span>
+                            <button type="submit" name="Submit" value="cancelForGolferFour" class="btn btn-dark">Cancel Golfer</button>
+                        }
+                        else
+                        {
+                            <input asp-for="ReservedGolfer4Name" readonly="readonly"/>
+                            <span asp-validation-for="ReservedGolfer4Name" class="text-danger"></span>
+                            <button type="submit" name="Submit" value="cancelForGolferFour" class="btn btn-dark" disabled="disabled">Cancel Golfer</button>
+                        }
+                    }
+                }
+            </div>
+        }
+        
+        <button type="submit" class="btn btn-success" name="Submit" value="Add">Add</button> 
+        @if (User.IsInRole("ProShop") || User.IsInRole("Clerk") || Model.AuthenticatedUser.Id == Model.SelectedTeeTime.BookerId )
+        {
+            if (Model.ReservedGolfer1Name != null || Model.ReservedGolfer2Name != null
+                || Model.ReservedGolfer3Name != null || Model.ReservedGolfer4Name != null)
+            {
+                <button type="submit" class="btn btn-danger" name="Submit" value="cancelTeeTime" >Cancel TeeTime</button>
+            }
+        }
+
+        @if (User.IsInRole("ProShop"))
+        {
+            <button type="submit" class="btn btn-primary" name="Submit" value="CheckInGolfers">Check In Golfers</button>
+        }
+</form>

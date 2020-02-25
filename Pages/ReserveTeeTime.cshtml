@@ -1,0 +1,79 @@
+﻿@page
+@model ClubBaistSystem.Pages.ReserveTeeTime
+@{
+    ViewData["Title"] = "Reserve TeeTime";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewData["Title"]</h1>
+<form method="post">
+        @foreach (var date in Model.ThisWeek)
+        {
+            <button asp-route-date="@date.ToString("dd MMMM yyyy")">
+                @date.ToString("dd MMMM yyyy")
+            </button>
+        }
+         @if (Model.RequestedDailyTeeSheet != null)
+            { 
+                <table class="table">
+                    <tr>
+                        <th colspan="6">
+                            Daily Tee Sheet for @Model.RequestedDailyTeeSheet.Date.ToString("dddd, dd MMMM yyyy") 
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Time</th>
+                        <th>Golfer 1</th>
+                        <th>Golfer 2</th>
+                        <th>Golfer 3</th>
+                        <th>Golfer 4</th>
+                        @if (User.IsInRole("ProShop") && Model.RequestedDailyTeeSheet.Date == DateTime.Today)
+                        {
+                            <th>Edit</th>
+                        }
+                        else if (!(Model.RequestedDailyTeeSheet.Date == DateTime.Today) && !(User.IsInRole("ProShop")))
+                        {
+                            <th>Edit</th>
+                        }
+                    </tr>
+                    @{
+                        foreach (var teeTime in Model.RequestedDailyTeeSheet.TeeTimes)
+                        {
+                            <tr>
+                                <td>@teeTime.Time.ToString("hh:mm tt")</td>
+                                <td>@teeTime.Golfer1.FullName</td>
+                                <td>@teeTime.Golfer2.FullName</td>
+                                <td>@teeTime.Golfer3.FullName</td>
+                                <td>@teeTime.Golfer4.FullName</td>
+                                   @if (User.IsInRole("ProShop") && Model.RequestedDailyTeeSheet.Date == DateTime.Today)
+                                   {
+                                       <td>
+                                           <a asp-page="/EditTeeTime" asp-route-time="@teeTime.Time.ToString("hh:mm tt")"
+                                              asp-route-date="@teeTime.Date.ToString("dd MMMM yyyy")" class="btn">
+                                               <i class="fa fa-trash"></i>
+                                               Edit
+                                           </a>
+                                       </td>
+                                   }
+                                   else if (!(Model.RequestedDailyTeeSheet.Date == DateTime.Today) && !(User.IsInRole("ProShop")))
+                                   {
+                                       <td>
+                                           <a asp-page="/EditTeeTime" asp-route-time="@teeTime.Time.ToString("hh:mm tt")"
+                                              asp-route-date="@teeTime.Date.ToString("dd MMMM yyyy")" class="btn">
+                                               <i class="fa fa-trash"></i>
+                                               Edit
+                                           </a>
+                                       </td>
+                                   }
+                            </tr>
+                        }
+                    }
+                </table>
+            }
+            @if (Model.Alert != null)
+            {
+                <div class="alert alert-primary" role="alert">
+                    @Model.Alert
+                </div>
+            }
+</form>

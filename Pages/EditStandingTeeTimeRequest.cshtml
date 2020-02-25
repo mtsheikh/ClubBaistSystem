@@ -1,0 +1,56 @@
+﻿@page
+@model ClubBaistSystem.Pages.EditStandingTeeTimeRequest
+@{
+    ViewData["Title"] = "Edit Standing TeeTime Request";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <a asp-page="/SubmitStandingTeeTimeRequest" class="btn btn-info" role="button">View Standing TeeTime Requests</a>
+    <br />
+    <br />
+    <p>Enter Shareholder Information: </p>
+
+    <div class="form-group">
+        <label asp-for="inputtedShareholder1" />
+        <input asp-for="inputtedShareholder1" />
+        <span asp-validation-for="inputtedShareholder1" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="inputtedShareholder2" />
+        <input asp-for="inputtedShareholder2" />
+        <span asp-validation-for="inputtedShareholder2" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="inputtedShareholder3" />
+        <input asp-for="inputtedShareholder3" />
+        <span asp-validation-for="inputtedShareholder3" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="inputtedShareholder4" />
+        <input asp-for="inputtedShareholder4" />
+        <span asp-validation-for="inputtedShareholder4" class="text-danger"></span>
+    </div>
+
+    <p>Start Date:</p>
+    <div class="form-group">
+        <label asp-for="inputtedStartDate" />
+        <input asp-for="inputtedStartDate" />
+        <span asp-validation-for="inputtedStartDate" class="text-danger"></span>
+    </div>
+
+    <p>End Date:</p>
+    <div class="form-group">
+        <label asp-for="inputtedEndDate" />
+        <input asp-for="inputtedEndDate" />
+        <span asp-validation-for="inputtedEndDate" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Edit</button>
+</form>
+

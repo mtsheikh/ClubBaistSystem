@@ -1,0 +1,85 @@
+﻿@page
+@using ClubBaistSystem.Domain
+@model ClubBaistSystem.Pages.ViewMembershipApplications
+@{
+    ViewData["Title"] = "View Membership Applications";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <a asp-page="/Index" class="btn btn-info" role="button">Home Page</a>
+    <br />
+    <br />
+    @if (Model.OnHoldMembershipApplications.Count != 0)
+    {
+        <table class="table">
+            <tr>
+                <th colspan="6">
+                    On Hold Membership Applications
+                </th>
+            </tr>
+            <tr>
+                <th>Member Name</th>
+                <th>Memberhip Type</th>
+                <th>Application Status</th>
+                <th>Review</th>
+            </tr>
+            @{
+                foreach (var onHoldMembershipApplication in Model.OnHoldMembershipApplications)
+                {
+                    <tr>
+                        <td>@onHoldMembershipApplication.FirstName</td>
+                        <td>@onHoldMembershipApplication.MembershipType</td>
+                        <td>@onHoldMembershipApplication.ApplicationStatus</td>
+                        <td>
+                            <a asp-page="/ReviewMembershipApplication" asp-route-id="@onHoldMembershipApplication.Id" class="btn">
+                                <i class="fa fa-trash"></i>
+                                Review Membership Application
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    }
+    @if (Model.WaitlistedMembershipApplications.Count != 0)
+    {
+        <table class="table">
+            <tr>
+                <th colspan="6">
+                    Waitlisted Membership Applications
+                </th>
+            </tr>
+            <tr>
+                <th>Member Name</th>
+                <th>Membership Type</th>
+                <th>Application Status</th>
+                <th>Review</th>
+            </tr>
+            @{
+                foreach (var waitlistedMembershipApplication in Model.WaitlistedMembershipApplications)
+                {
+                    <tr>
+                        <td>@waitlistedMembershipApplication.FirstName</td>
+                        <td>@waitlistedMembershipApplication.MembershipType</td>
+                        <td>@waitlistedMembershipApplication.ApplicationStatus</td>
+                        <td>
+                            <a asp-page="/ReviewMembershipApplication" asp-route-id="@waitlistedMembershipApplication.Id" class="btn">
+                                <i class="fa fa-trash"></i>
+                                Review Membership Application
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    }
+    @if (Model.Alert != null)
+    {
+        <div class="alert alert-primary" role="alert">
+            @Model.Alert
+        </div>
+    }
+</form>

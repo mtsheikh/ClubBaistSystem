@@ -1,0 +1,44 @@
+﻿@page
+@using System.Globalization
+@model ClubBaistSystem.Pages.ViewMemberDues
+@{
+    ViewData["Title"] = "Member Account Dues";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<h1>@ViewData["Title"]</h1>
+<form method="post">
+    <table class="table">
+        <tr>
+            <th colspan="6">
+                Member Account for @Model.AuthenticatedUser.FullName
+            </th>
+            <tr>
+                
+            </tr>
+            <th colspan="6">
+                Total Balance @($"{Model.AuthenticatedMemberAccount.TotalBalance:C}")    
+            </th>
+        </tr>
+        <tr>
+            <th>Date When Charged</th>
+            <th>Time When Charged</th>
+            <th>Date When Completed</th>
+            <th>Time When Completed</th>
+            <th>Entry Description</th>
+            <th>Amount</th>
+        </tr>
+        @{
+            foreach (var memberAccountEntry in Model.AuthenticatedMemberAccount.AccountEntries)
+            {
+                <tr>
+                    <td>@memberAccountEntry.WhenCharged.ToLongDateString()</td>
+                    <td>@memberAccountEntry.WhenCharged.ToString("hh:mm:ss tt", CultureInfo.InvariantCulture)</td>
+                    <td>@memberAccountEntry.WhenMade.ToLongDateString()</td>
+                    <td>@memberAccountEntry.WhenMade.ToString("hh:mm:ss tt", CultureInfo.InvariantCulture)</td>
+                    <td>@memberAccountEntry.EntryDecription</td>
+                    <td>@($"{memberAccountEntry.Amount:C}")</td>
+                </tr>
+            }
+        }
+    </table>
+</form>

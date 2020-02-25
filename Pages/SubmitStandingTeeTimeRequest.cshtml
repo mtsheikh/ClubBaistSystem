@@ -1,0 +1,53 @@
+﻿@page
+@model ClubBaistSystem.Pages.SubmitStandingTeeTimeRequest
+@{
+    ViewData["Title"] = "Standing TeeTime Request";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<h1>@ViewData["Title"]</h1>
+<form method="post">
+    @foreach (var day in Model.AvailableWeekDays)
+    {
+        <button asp-route-day="@day">
+            @day
+        </button>
+    }
+    @if (Model.RequestedStandingTeeTimeRequests != null)
+    {
+        <table class="table">
+            <tr>
+                <th colspan="6">
+                    Standing TeeTime Requests for @Model.RequestedStandingTeeTimeRequests[0].DayOfWeek
+                </th>
+            </tr>
+            <tr>
+                <th>Time</th>
+                <th>Edit</th>
+            </tr>
+            @{
+                foreach (var standingTeeTimeRequest in Model.RequestedStandingTeeTimeRequests)
+                {
+                    <tr>
+                        <td>@standingTeeTimeRequest.Time.ToString("hh:mm tt")</td>
+                        <td>
+                            <a asp-page="/EditStandingTeeTimeRequest"
+                               asp-route-time="@standingTeeTimeRequest.Time.ToString("hh:mm tt")"
+                               asp-route-day="@standingTeeTimeRequest.DayOfWeek"
+                               class="btn">
+                                <i class="fa fa-trash"></i>
+                                Edit
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    }
+    @if (Model.Alert != null)
+    {
+        <div class="alert alert-primary" role="alert">
+            @Model.Alert
+        </div>
+    }
+</form>
+

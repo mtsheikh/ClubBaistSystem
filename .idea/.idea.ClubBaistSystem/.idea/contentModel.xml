@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\mtshe\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\mtshe\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ClubBaistSystem.667475664.00" t="ExcludeRecursive" />
+    <e p="C:\Users\mtshe\source\repos\ClubBaistSystem" t="IncludeRecursive">
+      <e p="ApplicationUser.cs" t="Include" />
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="Areas" t="Include">
+        <e p="Identity" t="Include">
+          <e p="IdentityHostingStartup.cs" t="Include" />
+          <e p="Pages" t="Include">
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+            <e p="_ViewImports.cshtml" t="Include" />
+            <e p="_ViewStart.cshtml" t="Include" />
+            <e p="Account" t="Include">
+              <e p="_ViewImports.cshtml" t="Include" />
+              <e p="Login.cshtml" t="Include" />
+              <e p="Login.cshtml.cs" t="Include" />
+              <e p="Logout.cshtml" t="Include" />
+              <e p="Logout.cshtml.cs" t="Include" />
+              <e p="Register.cshtml" t="Include" />
+              <e p="Register.cshtml.cs" t="Include" />
+            </e>
+            <e p="Admin" t="Include">
+              <e p="Roles" t="Include" />
+              <e p="UserRoles" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="ClubBaistSystem.csproj" t="IncludeRecursive" />
+      <e p="ClubBaistSystem.sln" t="IncludeFlat" />
+      <e p="Data" t="Include">
+        <e p="ApplicationDbContext.cs" t="Include" />
+        <e p="ClubBaistSystemContext.cs" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="00000000000000_CreateIdentitySchema.cs" t="Include" />
+          <e p="00000000000000_CreateIdentitySchema.Designer.cs" t="Include" />
+          <e p="20200214085300_addFullName.cs" t="Include" />
+          <e p="20200214085300_addFullName.Designer.cs" t="Include" />
+          <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
+        </e>
+      </e>
+      <e p="DatabaseScripts" t="Include">
+        <e p="Nov152019AM948.sql" t="Include" />
+      </e>
+      <e p="Domain" t="Include">
+        <e p="AspNetRoleClaims.cs" t="Include" />
+        <e p="AspNetRoles.cs" t="Include" />
+        <e p="AspNetUserClaims.cs" t="Include" />
+        <e p="AspNetUserLogins.cs" t="Include" />
+        <e p="AspNetUserRoles.cs" t="Include" />
+        <e p="AspNetUsers.cs" t="Include" />
+        <e p="AspNetUserTokens.cs" t="Include" />
+        <e p="Associate.cs" t="Include" />
+        <e p="BronzeMember.cs" t="Include" />
+        <e p="Clerk.cs" t="Include" />
+        <e p="ClubBaistUser.cs" t="Include" />
+        <e p="DailyTeeSheet.cs" t="Include" />
+        <e p="GoldMember.cs" t="Include" />
+        <e p="Golfer.cs" t="Include" />
+        <e p="Intermediate.cs" t="Include" />
+        <e p="MemberAccount.cs" t="Include" />
+        <e p="MemberAccountEntry.cs" t="Include" />
+        <e p="MembershipApplication.cs" t="Include" />
+        <e p="ProShopStaff.cs" t="Include" />
+        <e p="Shareholder.cs" t="Include" />
+        <e p="ShareholderSpouse.cs" t="Include" />
+        <e p="SilverMember.cs" t="Include" />
+        <e p="StandingTeeTimeRequest.cs" t="Include" />
+        <e p="TeeTime.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.0" t="Include">
+            <e p="ClubBaistSystem.AssemblyInfo.cs" t="Include" />
+            <e p="ClubBaistSystem.RazorAssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Pages" t="Include">
+        <e p="_ViewImports.cshtml" t="Include" />
+        <e p="_ViewStart.cshtml" t="Include" />
+        <e p="EditStandingTeeTimeRequest.cshtml" t="Include" />
+        <e p="EditStandingTeeTimeRequest.cshtml.cs" t="Include" />
+        <e p="EditTeeTime.cshtml" t="Include" />
+        <e p="EditTeeTime.cshtml.cs" t="Include" />
+        <e p="Error.cshtml" t="Include" />
+        <e p="Error.cshtml.cs" t="Include" />
+        <e p="Index.cshtml" t="Include" />
+        <e p="Index.cshtml.cs" t="Include" />
+        <e p="Privacy.cshtml" t="Include" />
+        <e p="Privacy.cshtml.cs" t="Include" />
+        <e p="RecordMembershipApplication.cshtml" t="Include" />
+        <e p="RecordMembershipApplication.cshtml.cs" t="Include" />
+        <e p="ReserveTeeTime.cshtml" t="Include" />
+        <e p="ReserveTeeTime.cshtml.cs" t="Include" />
+        <e p="ReviewMembershipApplication.cshtml" t="Include" />
+        <e p="ReviewMembershipApplication.cshtml.cs" t="Include" />
+        <e p="Shared" t="Include">
+          <e p="_CookieConsentPartial.cshtml" t="Include" />
+          <e p="_Layout.cshtml" t="Include" />
+          <e p="_LoginPartial.cshtml" t="Include" />
+          <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+        </e>
+        <e p="SubmitStandingTeeTimeRequest.cshtml" t="Include" />
+        <e p="SubmitStandingTeeTimeRequest.cshtml.cs" t="Include" />
+        <e p="ViewMemberDues.cshtml" t="Include" />
+        <e p="ViewMemberDues.cshtml.cs" t="Include" />
+        <e p="ViewMembershipApplications.cshtml" t="Include" />
+        <e p="ViewMembershipApplications.cshtml.cs" t="Include" />
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="ScaffoldingReadme.txt" t="Include" />
+      <e p="Startup.cs" t="Include" />
+      <e p="TechnicalServices" t="Include">
+        <e p="CBS.cs" t="Include" />
+        <e p="ClubBaistUsers.cs" t="Include" />
+        <e p="DailyTeeSheets.cs" t="Include" />
+        <e p="MemberAccounts.cs" t="Include" />
+        <e p="MembershipApplications.cs" t="Include" />
+        <e p="StandingTeeTimeRequests.cs" t="Include" />
+        <e p="TeeTimes.cs" t="Include" />
+      </e>
+      <e p="wwwroot" t="Include">
+        <e p="css" t="Include">
+          <e p="site.css" t="Include" />
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="js" t="Include">
+          <e p="site.js" t="Include" />
+        </e>
+        <e p="lib" t="Include">
+          <e p="bootstrap" t="Include">
+            <e p="dist" t="Include">
+              <e p="css" t="Include">
+                <e p="bootstrap-grid.css" t="Include" />
+                <e p="bootstrap-grid.css.map" t="Include" />
+                <e p="bootstrap-grid.min.css" t="Include" />
+                <e p="bootstrap-grid.min.css.map" t="Include" />
+                <e p="bootstrap-reboot.css" t="Include" />
+                <e p="bootstrap-reboot.css.map" t="Include" />
+                <e p="bootstrap-reboot.min.css" t="Include" />
+                <e p="bootstrap-reboot.min.css.map" t="Include" />
+                <e p="bootstrap.css" t="Include" />
+                <e p="bootstrap.css.map" t="Include" />
+                <e p="bootstrap.min.css" t="Include" />
+                <e p="bootstrap.min.css.map" t="Include" />
+              </e>
+              <e p="js" t="Include">
+                <e p="bootstrap.bundle.js" t="Include" />
+                <e p="bootstrap.bundle.js.map" t="Include" />
+                <e p="bootstrap.bundle.min.js" t="Include" />
+                <e p="bootstrap.bundle.min.js.map" t="Include" />
+                <e p="bootstrap.js" t="Include" />
+                <e p="bootstrap.js.map" t="Include" />
+                <e p="bootstrap.min.js" t="Include" />
+                <e p="bootstrap.min.js.map" t="Include" />
+              </e>
+            </e>
+            <e p="LICENSE" t="Include" />
+          </e>
+          <e p="jquery" t="Include">
+            <e p="dist" t="Include">
+              <e p="jquery.js" t="Include" />
+              <e p="jquery.min.js" t="Include" />
+              <e p="jquery.min.map" t="Include" />
+            </e>
+            <e p="LICENSE.txt" t="Include" />
+          </e>
+          <e p="jquery-validation" t="Include">
+            <e p="dist" t="Include">
+              <e p="additional-methods.js" t="Include" />
+              <e p="additional-methods.min.js" t="Include" />
+              <e p="jquery.validate.js" t="Include" />
+              <e p="jquery.validate.min.js" t="Include" />
+            </e>
+            <e p="LICENSE.md" t="Include" />
+          </e>
+          <e p="jquery-validation-unobtrusive" t="Include">
+            <e p="jquery.validate.unobtrusive.js" t="Include" />
+            <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+            <e p="LICENSE.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

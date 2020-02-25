@@ -1,0 +1,44 @@
+﻿@page
+@model ClubBaistSystem.Pages.ReviewMembershipApplication
+@{
+    ViewData["Title"] = "Review Membership Application";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<form method="post" xmlns="http://www.w3.org/1999/html">
+    <a asp-page="/ViewMembershipApplications" class="btn btn-info" role="button">Return to Membership Applications</a>
+    <br />
+    <br />
+    <h3>Membership Type: @Model.SelectedMembershipApplication.MembershipType</h3>
+    <p>Current Application Status: @Model.SelectedMembershipApplication.ApplicationStatus</p>
+    <br/>
+    <h3>Member Personal Information</h3>
+    <p>First Name: @Model.SelectedMembershipApplication.FirstName</p>
+    <p>Last Name: @Model.SelectedMembershipApplication.LastName</p>
+    <p>Email: @Model.SelectedMembershipApplication.Email</p>
+    <p>Primary Phone: @Model.SelectedMembershipApplication.Phone</p>
+    @if (Model.SelectedMembershipApplication.AlternatePhone != "0000000000")
+    {
+        <p>Alternate Phone: @Model.SelectedMembershipApplication.AlternatePhone</p>
+    }
+    <p></p>
+    <p>Address: @Model.SelectedMembershipApplication.Address, @Model.SelectedMembershipApplication.PostalCode</p>
+    <p>City: @Model.SelectedMembershipApplication.City</p>
+    <p>Date Of Birth: @Model.SelectedMembershipApplication.DateOfBirth.Date.ToLongDateString()</p>
+    <br/>
+    <h3>Member Work Information </h3>
+    <p>Occupation: @Model.SelectedMembershipApplication.Occupation</p>
+    <p>Company Name: @Model.SelectedMembershipApplication.CompanyName</p>
+    <p>Company Address: @Model.SelectedMembershipApplication.CompanyAddress, @Model.SelectedMembershipApplication.PostalCode</p>
+    <p>Company City: @Model.SelectedMembershipApplication.City</p>
+    <br/>
+    <h3>Sponsors Information</h3>
+    <p>Shareholder Sponsor 1: @Model.SelectedMembershipApplication.Shareholder1</p>
+    <p>Shareholder Sponsor 2: @Model.SelectedMembershipApplication.Shareholder2</p>
+
+    <button type="submit" name="Submit" value="rejectApplication" class="btn btn-danger" >Reject Application</button>
+    @if (Model.SelectedMembershipApplication.ApplicationStatus != "Waitlist")
+    {
+        <button type="submit" name="Submit" value="waitlistApplication" class="btn btn-secondary" >Waitlist Application</button>
+    }
+
+</form>

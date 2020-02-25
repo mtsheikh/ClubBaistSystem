@@ -1,0 +1,29 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+Admin Page
+<br/>
+<br/>
+Is Authenticated: @User.Identity.IsAuthenticated
+<br/>
+User Name: @User.Identity.Name
+<br/>
+Authentication Type: @User.Identity.AuthenticationType
+<br/>
+
+
+Role Test:
+@if (User.IsInRole("Shareholder"))
+{
+    <div>I am a Shareholder</div>
+}
+else if (User.IsInRole("ProShop"))
+{
+    <div> I am a Pro Shop Staff Member</div>
+}
