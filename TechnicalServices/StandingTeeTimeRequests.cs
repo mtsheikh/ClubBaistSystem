@@ -108,5 +108,50 @@ namespace ClubBaistSystem.TechnicalServices
             connection.Close();
             return success != 0;
         }
+        public StandingTeeTimeRequest GetStandingTeeTimeRequest(string dayOfWeek, DateTime startDate, 
+                                                                    DateTime endDate, DateTime time)
+            {
+                {
+                    var golferManager = new ClubBaistUsers();
+                    var requestedStandingTeeTimeRequest = new StandingTeeTimeRequest();
+                    using var connection = new SqlConnection(ConnectionString);
+                    using var command = new SqlCommand("FindStandingTeeTimeRequest", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.Add("@dayOfWeek", SqlDbType.VarChar).Value = dayOfWeek;
+                    command.Parameters.Add("@startDate", SqlDbType.VarChar).Value = startDate;
+                    command.Parameters.Add("@endDate", SqlDbType.VarChar).Value = endDate;
+                    command.Parameters.Add("@time", SqlDbType.VarChar).Value = time;
+
+                    //Open the connection and execute the reader 
+                    connection.Open();
+                    var reader = command.ExecuteReader();
+
+                    if (reader.HasRows)
+                        while (reader.Read())
+                        {
+                            // Mapping the program Object to Database
+                            requestedStandingTeeTimeRequest = new StandingTeeTimeRequest
+                            {
+                                Time = new DateTime(((TimeSpan) reader[0]).Ticks),
+                                DayOfWeek = (string) reader[1],
+                                Shareholder1 = !DBNull.Value.Equals(reader[2])
+                                    ? golferManager.GetUserFromId((string) reader[2])
+                                    : new Shareholder(),
+                                Shareholder2 = !DBNull.Value.Equals(reader[3])
+                                    ? golferManager.GetUserFromId((string) reader[3])
+                                    : new Shareholder(),
+                                Shareholder3 = !DBNull.Value.Equals(reader[4])
+                                    ? golferManager.GetUserFromId((string) reader[4])
+                                    : new Shareholder(),
+                                Shareholder4 = !DBNull.Value.Equals(reader[5])
+                                    ? golferManager.GetUserFromId((string) reader[5])
+                                    : new Shareholder()
+                            };
+                        }
+
+                    reader.Close();
+                    return requestedStandingTeeTimeRequest;
+            }
+        }
     }
 }

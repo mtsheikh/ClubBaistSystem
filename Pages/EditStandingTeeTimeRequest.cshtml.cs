@@ -68,12 +68,8 @@ namespace ClubBaistSystem.Pages
             if (!ModelState.IsValid) return Page();
             var result = false;
 
-            _selectedStandingTeeTimeRequest = new StandingTeeTimeRequest();
-            _selectedStandingTeeTimeRequest.StartDate = requestedStartDate;
-            _selectedStandingTeeTimeRequest.EndDate = requestedEndDate;
-            _selectedStandingTeeTimeRequest.Time = requestedTime;
-            _selectedStandingTeeTimeRequest.DayOfWeek = requestedDayOfWeek;
-
+            _selectedStandingTeeTimeRequest = _requestDirector.FindStandingTeeTimeRequest(requestedDayOfWeek,
+                requestedStartDate, requestedEndDate, requestedTime);
             _selectedStandingTeeTimeRequest.Shareholder1.FullName = InputtedShareholder1;
             _selectedStandingTeeTimeRequest.Shareholder2.FullName = InputtedShareholder2;
             _selectedStandingTeeTimeRequest.Shareholder3.FullName = InputtedShareholder3;

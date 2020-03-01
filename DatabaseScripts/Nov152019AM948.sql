@@ -114,18 +114,18 @@ DROP PROCEDURE IF EXISTS GetTeeTimesByDate
 GO 
 CREATE PROCEDURE GetTeeTimesByDate(@Date		DATE = NULL)
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	 DECLARE		@ReturnCode INT
+	 SET			@ReturnCode = 1
 
-	 � SELECT * FROM TeeTime
-	 � WHERE [Date] = @Date
+	 SELECT * FROM TeeTime
+	 WHERE [Date] = @Date
 
-	 � IF @@ERROR = 0
+	 IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		 � �RAISERROR('GetTeeTmesByDate - SELECT error from TeeTime Table',16,1)
+	 ELSE 
+		 RAISERROR('GetTeeTmesByDate - SELECT error from TeeTime Table',16,1)
 
-	 � Return @ReturnCode
+	 Return @ReturnCode
 
 	 /*Approved*/
 
@@ -139,8 +139,8 @@ CREATE PROCEDURE CheckInGolfer	  (@Date			 DATE,
 								   @golfer3CheckedIn BIT,
 								   @golfer4CheckedIn BIT)
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	 DECLARE		@ReturnCode INT
+	 SET			@ReturnCode = 1
 
 	  UPDATE TeeTime
 	   SET	  Golfer1CheckedIn = @golfer1CheckedIn,
@@ -150,12 +150,12 @@ AS
 	   WHERE  [Date]  = @Date
 	   AND	  [Time]  = @Time	
 
-	 � IF @@ERROR = 0
+	 IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		 � �RAISERROR('CheckInGolfer - INSERT error from TeeTime Table',16,1)
+	 ELSE 
+		 RAISERROR('CheckInGolfer - INSERT error from TeeTime Table',16,1)
 
-	 � Return @ReturnCode 
+	 Return @ReturnCode 
 
 
 GO 
@@ -169,10 +169,10 @@ CREATE PROCEDURE EditTeeTime(	   @Date		DATE,
 								   @golfer4		VARCHAR(25) = NULL,
 								   @bookerId	NVARCHAR(450) = NULL)
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 
-	 � UPDATE TeeTime
+	  UPDATE TeeTime
 	   SET	  Golfer1Id = (SELECT Id FROM AspNetUsers WHERE FullName = @golfer1),
 			  Golfer2Id = (SELECT Id FROM AspNetUsers WHERE FullName = @golfer2),
 			  Golfer3Id = (SELECT Id FROM AspNetUsers WHERE FullName = @golfer3),
@@ -181,22 +181,22 @@ AS
 	   WHERE  [Date]  = @Date 
 	   AND	  [Time]  = @Time	
 
-	 � IF @@ERROR = 0
+	  IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		 � �RAISERROR('EditTeeTime - INSERT error from TeeTime Table',16,1)
+	  ELSE 
+		 RAISERROR('EditTeeTime - INSERT error from TeeTime Table',16,1)
 
-	 � Return @ReturnCode 
+	  Return @ReturnCode 
 	 /*Approved*/
 GO 
 DROP PROCEDURE IF EXISTS GenerateDailyTeeSheet
 GO 
 CREATE PROCEDURE GenerateDailyTeeSheet (@NumberOfDay INT)
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 
-	 � DECLARE @start DATETIME, @end DATETIME, @counter int = 0
+	  DECLARE @start DATETIME, @end DATETIME, @counter int = 0
 
 		/*The start and end of a golf session*/ 
 		SET @start = '7:00AM';
@@ -248,38 +248,38 @@ AS
 					AND		[Time] = (SELECT [Time] FROM GrabGolfer WHERE RowNumber = @counter)
 			END
 			
-	 � IF @@ERROR = 0
+	  IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		 � �RAISERROR('GenerateDailyTeeSheet - INSERT error from TeeTime Table',16,1)
+	  ELSE 
+		 RAISERROR('GenerateDailyTeeSheet - INSERT error from TeeTime Table',16,1)
 
-	 � Return @ReturnCode
+	  Return @ReturnCode
 
 GO 
 DROP PROCEDURE IF EXISTS RetireDailyTeeSheet
 GO 
 CREATE PROCEDURE RetireDailyTeeSheet
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 
 	   DELETE FROM TeeTime 
        WHERE [Date] = (SELECT CONVERT(VARCHAR(11), dateadd(day,datediff(day,1,GETDATE()),0)))
 
-	 � IF @@ERROR = 0
+	  IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		 � �RAISERROR('RetireDailyTeeSheet - DELETE error from TeeTime Table',16,1)
+	  ELSE 
+		 RAISERROR('RetireDailyTeeSheet - DELETE error from TeeTime Table',16,1)
 
-	 � Return @ReturnCode
+	  Return @ReturnCode
 
 GO 
 DROP PROCEDURE IF EXISTS GetAvailableStandingTeeTimeRequestsByDay
 GO 
 CREATE PROCEDURE GetAvailableStandingTeeTimeRequestsByDay(@DayOfWeek		VARCHAR(10) = NULL)
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	 DECLARE		@ReturnCode INT
+	 SET			@ReturnCode = 1
 
 	   SELECT	[Time],
 				[DayOfWeek],
@@ -290,12 +290,42 @@ AS
 	   FROM		StandingTeeTimeRequest
        WHERE	[DayOfWeek] = @DayOfWeek
 
-	 � IF @@ERROR = 0
+	 IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		 � �RAISERROR('GetAvailableStandingTeeTimeRequestsByDay - SELECT error from StandingTeeTimeRequest Table',16,1)
+	 ELSE 
+		 RAISERROR('GetAvailableStandingTeeTimeRequestsByDay - SELECT error from StandingTeeTimeRequest Table',16,1)
 
-	 � Return @ReturnCode 
+	 Return @ReturnCode 
+
+GO 
+DROP PROCEDURE IF EXISTS FindStandingTeeTimeRequest
+GO 
+CREATE PROCEDURE FindStandingTeeTimeRequest(@dayOfWeek		VARCHAR(10) = NULL,
+											@startDate		DATE= NULL,
+											@endDate		DATE= NULL,
+											@time		    TIME= NULL)
+AS 
+	 DECLARE		@ReturnCode INT
+	 SET			@ReturnCode = 1
+
+	   SELECT	[Time],
+				[DayOfWeek],
+				(SELECT FullName FROM AspNetUsers WHERE Id = Shareholder1Id),
+				(SELECT FullName FROM AspNetUsers WHERE Id = Shareholder2Id),
+				(SELECT FullName FROM AspNetUsers WHERE Id = Shareholder3Id),
+				(SELECT FullName FROM AspNetUsers WHERE Id = Shareholder4Id)
+	   FROM		StandingTeeTimeRequest
+       WHERE	[DayOfWeek] = @DayOfWeek
+	   AND		[Time] = @time
+	   AND		StartDate = @startDate
+	   AND		EndDate = @endDate
+
+	 IF @@ERROR = 0
+			SET @ReturnCode = 0
+	 ELSE 
+		 RAISERROR('FindStandingTeeTimeRequest - SELECT error from StandingTeeTimeRequest Table',16,1)
+
+	 Return @ReturnCode
 	 
 GO 
 DROP PROCEDURE IF EXISTS EditStandingTeeTimeRequest
@@ -380,30 +410,30 @@ DROP PROCEDURE IF EXISTS GetUserNameFromId
 GO 
 CREATE PROCEDURE GetUserNameFromId(@userId NVARCHAR(450))
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 
-	 � SELECT 
+	  SELECT 
 			UserName 
 	   FROM AspNetUsers
        WHERE Id = @userId
 
-	 � IF @@ERROR = 0
+	  IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		 � �RAISERROR('GetUserNameFromId - SELECT error from TeeTime Table',16,1)
+	  ELSE 
+		  RAISERROR('GetUserNameFromId - SELECT error from TeeTime Table',16,1)
 
-	 � Return @ReturnCode 
+	  Return @ReturnCode 
 
 GO 
 DROP PROCEDURE IF EXISTS GetUserFromUserName
 GO 
 CREATE PROCEDURE GetUserFromUserName(@UserName NVARCHAR(450))
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 
-	 �SELECT 
+	 SELECT 
 			UserId, 
 			[FullName],
 			AspNetRoles.Name
@@ -414,12 +444,12 @@ AS
 	   ON AspNetRoles.Id = AspNetUserRoles.RoleId
        WHERE AspNetUsers.UserName = @UserName
 
-	 � IF @@ERROR = 0
+	  IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		 � �RAISERROR('GetUserFromUserName - SELECT error from TeeTime Table',16,1)
+	  ELSE 
+		  RAISERROR('GetUserFromUserName - SELECT error from TeeTime Table',16,1)
 
-	 � Return @ReturnCode 
+	  Return @ReturnCode 
 
 GO
 DROP PROCEDURE IF EXISTS GetTeeTimeByDateAndTime
@@ -427,8 +457,8 @@ GO
 CREATE PROCEDURE GetTeeTimeByDateAndTime (@Date Date, 
 							              @Time Time)
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 
 	   SELECT [Date],
 			  [Time], 
@@ -445,12 +475,12 @@ AS
 	   WHERE  [Date] = @Date
 		 AND  [Time] = @Time
 	
-	 � IF @@ERROR = 0
+	  IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		 � �RAISERROR('GetTeeTimeByDateAndTime - SELECT error from TeeTime Table',16,1)
+	  ELSE 
+		  RAISERROR('GetTeeTimeByDateAndTime - SELECT error from TeeTime Table',16,1)
 
-	 � Return @ReturnCode 
+	  Return @ReturnCode 
 
 
 GO
@@ -463,8 +493,8 @@ CREATE PROCEDURE RecordMembershipApplication (@lastName NVARCHAR(25),@firstName 
 											  @alternatePhone NVARCHAR(10) NULL)
 
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 	 
 	   INSERT 
 		INTO MembershipApplication
@@ -473,21 +503,21 @@ AS
 			VALUES
 			(@lastName,@firstName,@address,@postalCode,@city,@dateOfBirth,@shareholder1,@shareholder2,@membershipType,@occupation,
 			@companyName,@companyAddress,@companyPostalCode,@companyCity,@email,@phone,@alternatePhone)
-�	   
+	   
        IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 �ELSE 
-		� �	RAISERROR('RecordMembershipApplication - INSERT error from MembershipApplication Table',16,1)
+	 ELSE 
+		 	RAISERROR('RecordMembershipApplication - INSERT error from MembershipApplication Table',16,1)
 
-	 � Return @ReturnCode 
+	  Return @ReturnCode 
 
 GO
 DROP PROCEDURE IF EXISTS GetAllOnholdMembershipApplications
 GO
 CREATE PROCEDURE GetAllOnholdMembershipApplications
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 
 	   
 	   SELECT MembershipApplicationId,LastName,FirstName,[Address],PostalCode,
@@ -499,18 +529,18 @@ AS
 	
        IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		� �	RAISERROR('GetAllOnholdMembershipApplications - SELECT error from MembershipApplication Table',16,1)
+	  ELSE 
+		 	RAISERROR('GetAllOnholdMembershipApplications - SELECT error from MembershipApplication Table',16,1)
 
-	 � Return @ReturnCode 
+	  Return @ReturnCode 
 
 GO
 DROP PROCEDURE IF EXISTS GetAllWaitlistedMembershipApplications
 GO
 CREATE PROCEDURE GetAllWaitlistedMembershipApplications
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 
 	   
 	   SELECT MembershipApplicationId,LastName,FirstName,[Address],PostalCode,
@@ -522,17 +552,17 @@ AS
 	
        IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		� �	RAISERROR('GetAllWaitlistedMembershipApplications - SELECT error from MembershipApplication Table',16,1)
+	  ELSE 
+			RAISERROR('GetAllWaitlistedMembershipApplications - SELECT error from MembershipApplication Table',16,1)
 
-	 � Return @ReturnCode 
+	  Return @ReturnCode 
 GO
 DROP PROCEDURE IF EXISTS GetMembershipApplication
 GO
 CREATE PROCEDURE GetMembershipApplication(@membershipApplicationId INT)
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 
 	   SELECT LastName,FirstName,[Address],PostalCode,City,DateOfBirth,
 			  Shareholder1,Shareholder2,MembershipType,Occupation,
@@ -543,10 +573,10 @@ AS
 	
        IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		� �	RAISERROR('GetMembershipApplication - SELECT error from MembershipApplication Table',16,1)
+	  ELSE 
+		 	RAISERROR('GetMembershipApplication - SELECT error from MembershipApplication Table',16,1)
 
-	 � Return @ReturnCode 
+	  Return @ReturnCode 
 
 
 GO
@@ -554,8 +584,8 @@ DROP PROCEDURE IF EXISTS CancelMembershipApplication
 GO
 CREATE PROCEDURE CancelMembershipApplication(@membershipApplicationId INT)
 AS 
-	 � DECLARE		@ReturnCode INT
-	 � SET			@ReturnCode = 1
+	  DECLARE		@ReturnCode INT
+	  SET			@ReturnCode = 1
 
 	   UPDATE MembershipApplication
 	   SET	  ApplicationStatus = 'Camcel'
@@ -563,11 +593,10 @@ AS
 	
        IF @@ERROR = 0
 			SET @ReturnCode = 0
-	 � ELSE 
-		� �	RAISERROR('CancelMembershipApplication - UPDATE error from MembershipApplication Table',16,1)
+	  ELSE 
+		 	RAISERROR('CancelMembershipApplication - UPDATE error from MembershipApplication Table',16,1)
 
-	 � Return @ReturnCode 
-
+	  Return @ReturnCode 
 
 GO
 DROP PROCEDURE IF EXISTS WaitlistMembershipApplication
@@ -611,117 +640,6 @@ AS
 		RAISERROR('GetMemberAccount - SELECT error from AccountEntry Table',16,1)
 
 	 Return @ReturnCode
-
-/* SELECT STATEMENTS Dry Template */
-
-GO
-GenerateDailyTeeSheet 0
-GO
-GenerateDailyTeeSheet 1
-GO
-GenerateDailyTeeSheet 2
-GO
-GenerateDailyTeeSheet 3
-GO
-GenerateDailyTeeSheet 4
-GO
-GenerateDailyTeeSheet 5
-GO
-GenerateDailyTeeSheet 6
-
-GO
-GenerateStandingTeeTimeRequestsCalender 'Monday'
-GO
-GenerateStandingTeeTimeRequestsCalender 'Tuesday'
-GO
-GenerateStandingTeeTimeRequestsCalender 'Wednesday'
-GO
-GenerateStandingTeeTimeRequestsCalender 'Thursday'
-GO
-GenerateStandingTeeTimeRequestsCalender 'Friday'
-GO
-GenerateStandingTeeTimeRequestsCalender 'Saturday'
-GO
-GenerateStandingTeeTimeRequestsCalender 'Sunday'
-GO
-
-GO
-DROP PROCEDURE IF EXISTS RecordGolferScore
-GO
-CREATE PROCEDURE RecordGolferScore (@golferId NVARCHAR(450), @courseName NVARCHAR(25), @date DATE, 
-									@hole INT, @score INT, @rating DECIMAL, @slope DECIMAL)
-AS 
-	 DECLARE		@ReturnCode INT
-	 SET			@ReturnCode = 1
-
-	   INSERT 
-	   INTO Rounds
-	   VALUES 
-	   (
-			@golferId,
-			@courseName,
-			@date,
-			@hole,
-			@score,
-			@rating,
-			@slope
-	   )
-
-	IF @@ERROR = 0
-			SET @ReturnCode = 0
-	 ELSE 
-		RAISERROR('RecordGolferScore - INSERT error from Rounds Table',16,1)
-
-	 Return @ReturnCode 
-
-	 RecordGolferScore '879c1fa7-8992-452f-ade2-7ae1f41a3e95', 'Club BAIST Golf Course', '21-FEB-2020', 4, 6, 70.6, 128
-
-	 SELECT * FROM Rounds
-
-
-	 SELECT TOP 20 * FROM Rounds  
-	 WHERE GolferId = '879c1fa7-8992-452f-ade2-7ae1f41a3e95'
-		   AND Score != 0
-	 ORDER BY [Date] DESC, Hole DESC
-
-	 SELECT * FROM AspNetUsers
-
-
-
-
-	 INSERT INTO AspNetUsers (Id, UserName, NormalizedUserName, Email, EmailConfirmed, NormalizedEmail, PasswordHash, FullName, PhoneNumberConfirmed, TwoFactorEnabled, LockoutEnabled,AccessFailedCount)
-	 VALUES ('879c1fa7-8992-452f-ade2-7ae1f41a3e99','bobdoe@gmail.com', 'BOBDOE@GMAIL.COM', 'bobdoe@gmail.com', '1','BOBDOE@GMAIL.COM', 'AQAAAAEAACcQAAAAELuCNBt0tV2D6rRxGbZOQjBTeU73TsOsu1HuKw31KMg3JsQGUo1VqXEyMQgBrk2cKQ==','Bob Doe',1,0,0,0)
-
-		UPDATE AspNetUsers
-		Set SecurityStamp = 'TRFXGFMGJDP2FZZ7GONDKIOKS5GTYPWO',
-			ConcurrencyStamp = '91a1f1d1-7a65-4fe7-9275-7c8077777984'
-		WHERE Id = 'c0ff790c-ea82-4378-acb3-0cb8e787ab09'
-
-		SELECT AspNetUsers.Id, AspNetUsers.FullName, AspNetRoles.Name
-		FROM AspNetUsers
-		INNER JOIN AspNetUserRoles
-		ON AspNetUsers.Id = AspNetUserRoles.UserId
-		INNER JOIN AspNetRoles
-		ON AspNetRoles.Id = AspNetUserRoles.RoleId
-		
-		INSERT 
-		INTO AspNetUserRoles
-		(UserId,RoleId)
-		VALUES
-		(@userId, 
-		(SELECT TOP 1 AspNetRoles.Id
-		FROM AspNetUserRoles
-		INNER JOIN AspNetRoles
-		ON AspNetRoles.Id = AspNetUserRoles.RoleId
-		Where Name = 'Shareholder')
-		)
-
-		SELECT AspNetUsers.Id
-		FROM AspNetUsers
-		INNER JOIN AspNetUserRoles
-		ON AspNetUsers.Id = AspNetUserRoles.UserId
-		Where AspNetUsers.Id = 'c0ff790c-ea82-4378-acb3-0cb8e787ab09'
-
 
 GO
 	DROP PROCEDURE IF EXISTS CreateNewAccount
@@ -782,15 +700,86 @@ GO
 		RAISERROR('CreateNewAccount - INSERT error from AspNetUser Table',16,1)
 
 	 Return @ReturnCode 
-	 GO
-	 sp_help AspNetUsers
-	 GO
-	 sp_help MembershipApplication
 
-	 GetMemberAccount '879c1fa7-8992-452f-ade2-7ae1f41a3e99'
+GO
+DROP PROCEDURE IF EXISTS RecordGolferScore
+GO
+CREATE PROCEDURE RecordGolferScore (@golferId NVARCHAR(450), @courseName NVARCHAR(25), @date DATE, 
+									@hole INT, @score INT, @rating DECIMAL, @slope DECIMAL)
+AS 
+	 DECLARE		@ReturnCode INT
+	 SET			@ReturnCode = 1
 
-	 SELECT * FROM AspNetUsers
+	   INSERT 
+	   INTO Rounds
+	   VALUES 
+	   (
+			@golferId,
+			@courseName,
+			@date,
+			@hole,
+			@score,
+			@rating,
+			@slope
+	   )
 
-	 exec sp_executesql N'SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
-FROM [AspNetUsers] AS [a]
-WHERE (([a].[NormalizedUserName] = @__normalizedUserName_0) AND ([a].[NormalizedUserName] IS NOT NULL AND @__normalizedUserName_0 IS NOT NULL)) OR ([a].[NormalizedUserName] IS NULL AND @__normalizedUserName_0 IS NULL)',N'@__normalizedUserName_0 nvarchar(256)',@__normalizedUserName_0=N'REBECCADOE@GMAIL.COM'
+	IF @@ERROR = 0
+			SET @ReturnCode = 0
+	 ELSE 
+		RAISERROR('RecordGolferScore - INSERT error from Rounds Table',16,1)
+
+	 Return @ReturnCode 
+
+GO
+DROP PROCEDURE IF EXISTS ViewPlayerHandicap
+GO
+CREATE PROCEDURE ViewPlayerHandicap (@golferId NVARCHAR(450))
+AS 
+	 DECLARE		@ReturnCode INT
+	 SET			@ReturnCode = 1
+
+	 SELECT TOP 20 * FROM Rounds  
+	 WHERE GolferId = @golferId
+		   AND Score != 0
+	 ORDER BY [Date] DESC, Hole DESC
+
+	IF @@ERROR = 0
+			SET @ReturnCode = 0
+	 ELSE 
+		RAISERROR('ViewPlayerHandicap - SELECT error from Rounds Table',16,1)
+
+	 Return @ReturnCode 
+
+/* SELECT STATEMENTS Dry Template */
+
+GO
+GenerateDailyTeeSheet 0
+GO
+GenerateDailyTeeSheet 1
+GO
+GenerateDailyTeeSheet 2
+GO
+GenerateDailyTeeSheet 3
+GO
+GenerateDailyTeeSheet 4
+GO
+GenerateDailyTeeSheet 5
+GO
+GenerateDailyTeeSheet 6
+
+GO
+GenerateStandingTeeTimeRequestsCalender 'Monday'
+GO
+GenerateStandingTeeTimeRequestsCalender 'Tuesday'
+GO
+GenerateStandingTeeTimeRequestsCalender 'Wednesday'
+GO
+GenerateStandingTeeTimeRequestsCalender 'Thursday'
+GO
+GenerateStandingTeeTimeRequestsCalender 'Friday'
+GO
+GenerateStandingTeeTimeRequestsCalender 'Saturday'
+GO
+GenerateStandingTeeTimeRequestsCalender 'Sunday'
+GO
+

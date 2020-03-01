@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\mtshe\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\mtshe\.Rider2019.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\mtshe\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\mtshe\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ClubBaistSystem.667475664.00" t="ExcludeRecursive" />
     <e p="C:\Users\mtshe\source\repos\ClubBaistSystem" t="IncludeRecursive">
@@ -117,6 +119,11 @@
         <e p="ViewMemberDues.cshtml.cs" t="Include" />
         <e p="ViewMembershipApplications.cshtml" t="Include" />
         <e p="ViewMembershipApplications.cshtml.cs" t="Include" />
+        <e p="ViewPlayerHandicap.cshtml" t="Include" />
+        <e p="ViewPlayerHandicap.cshtml.cs" t="Include" />
+      </e>
+      <e p="PrintedCode" t="Include">
+        <e p="SQLScript.pdf" t="Include" />
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">

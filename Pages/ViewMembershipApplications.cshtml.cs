@@ -17,7 +17,7 @@ namespace ClubBaistSystem.Pages
         
         public void OnGet()
         {
-            OnHoldMembershipApplications = _requestDirector.FindOnHoldMembershipApplications();
+            OnHoldMembershipApplications = _requestDirector.ReviewOnHoldMembershipApplications();
             WaitlistedMembershipApplications = _requestDirector.FindWaitlistedMembershipApplications();
         }
         

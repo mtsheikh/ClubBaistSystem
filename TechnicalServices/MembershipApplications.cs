@@ -121,7 +121,7 @@ namespace ClubBaistSystem.TechnicalServices
             reader.Close();
             return onHoldMembershipApplications;
         }
-        public MembershipApplication GetMembershipApplication(int membershipApplicationId)
+        public MembershipApplication FindMembershipApplication(int membershipApplicationId)
          {
              var onHoldMembershipApplication = new MembershipApplication();
             using var connection = new SqlConnection(ConnectionString);
@@ -171,7 +171,7 @@ namespace ClubBaistSystem.TechnicalServices
             connection.Close();
             return success != 0;
         }
-        public bool WaitlistMembershipApplication(int membershipApplicationId)
+        public bool UpdateMembershipApplication(int membershipApplicationId)
         {
             using var connection = new SqlConnection(ConnectionString);
             using var command = new SqlCommand("WaitlistMembershipApplication", connection);

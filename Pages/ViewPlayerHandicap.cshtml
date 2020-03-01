@@ -1,0 +1,12 @@
+﻿@page
+@model ClubBaistSystem.Pages.ViewPlayerHandicap
+@{
+    ViewData["Title"] = "View Player Handicap";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h2>@Model.authenticatedPlayer.FullName</h2>
+
+<h3>Handicap Factor: @Model.PlayerHandicapFactor</h3>

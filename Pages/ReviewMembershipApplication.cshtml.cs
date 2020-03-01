@@ -17,7 +17,7 @@ namespace ClubBaistSystem.Pages
         public void OnGet()
         {
             var membershipApplicationId = int.Parse(Request.Query["id"]);
-            SelectedMembershipApplication = _requestDirector.FindMembershipApplication(membershipApplicationId);
+            SelectedMembershipApplication = _requestDirector.ViewMembershipApplication(membershipApplicationId);
         }
 
         public ActionResult OnPost(string submit)
@@ -31,7 +31,7 @@ namespace ClubBaistSystem.Pages
             {
                 "rejectApplication" => _requestDirector.RejectMembershipApplication(membershipApplicationId),
                 "waitlistApplication" => _requestDirector.WaitlistMembershipApplication(membershipApplicationId),
-                "approveApplication" => _requestDirector.ApproveMembershipApplication(_requestDirector.FindMembershipApplication(membershipApplicationId)),
+                "approveApplication" => _requestDirector.ApproveMembershipApplication(_requestDirector.ViewMembershipApplication(membershipApplicationId)),
                 _ => result
             };
             

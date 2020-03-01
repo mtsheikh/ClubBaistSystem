@@ -40,6 +40,11 @@ namespace ClubBaistSystem.TechnicalServices
         {
             return _standingTeeTimeRequestsManager.GetStandingTeeTimeRequests(dayOfWeek);
         }
+        public StandingTeeTimeRequest FindStandingTeeTimeRequest(string dayOfWeek, DateTime startDate, 
+                                                                 DateTime endDate, DateTime time)
+        {
+            return _standingTeeTimeRequestsManager.GetStandingTeeTimeRequest(dayOfWeek, startDate, endDate, time);
+        }
         public bool SubmitStandingTeeTimeRequest(StandingTeeTimeRequest selectedStandingTeeTimeRequest)
         {
             return _standingTeeTimeRequestsManager.AddStandingTeeTimeRequest(selectedStandingTeeTimeRequest);
@@ -54,7 +59,7 @@ namespace ClubBaistSystem.TechnicalServices
         {
             return _membershipApplicationManager.AddMembershipApplication(newMembershipApplication);
         }
-        public List<MembershipApplication> FindOnHoldMembershipApplications()
+        public List<MembershipApplication> ReviewOnHoldMembershipApplications()
         {
             return _membershipApplicationManager.GetOnHoldMembershipApplications();
         }
@@ -62,9 +67,9 @@ namespace ClubBaistSystem.TechnicalServices
         {
             return _membershipApplicationManager.GetWaitlistedMembershipApplications();
         }
-        public MembershipApplication FindMembershipApplication(int membershipApplicationId)
+        public MembershipApplication ViewMembershipApplication(int membershipApplicationId)
         {
-            return _membershipApplicationManager.GetMembershipApplication(membershipApplicationId);
+            return _membershipApplicationManager.FindMembershipApplication(membershipApplicationId);
         }
         public bool RejectMembershipApplication(int membershipApplicationId)
         {
@@ -72,7 +77,7 @@ namespace ClubBaistSystem.TechnicalServices
         }
         public bool WaitlistMembershipApplication(int membershipApplicationId)
         {
-            return _membershipApplicationManager.WaitlistMembershipApplication(membershipApplicationId);
+            return _membershipApplicationManager.UpdateMembershipApplication(membershipApplicationId);
         }
         public bool ApproveMembershipApplication(MembershipApplication approvedMembershipApplication)
         {
@@ -89,6 +94,10 @@ namespace ClubBaistSystem.TechnicalServices
         public bool RecordPlayerScores(Scorecard scorecard)
         {
             return _playerScoreManager.AddPlayerScores(scorecard);
+        }
+        public decimal ViewPlayerHandicap(ClubBaistUser authenticatedPlayer)
+        {
+            return _playerScoreManager.CalculatePlayerHandicap(authenticatedPlayer);
         }
     }
 }

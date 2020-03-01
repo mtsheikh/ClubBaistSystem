@@ -1,46 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7055954-2288-4e60-90b2-f6acf2a7c6a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Domain/Round.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Scorecard.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/RecordGolferScores.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/RecordGolferScores.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TechnicalServices/PlayerScores.cs" afterDir="false" />
+    <list default="true" id="c7055954-2288-4e60-90b2-f6acf2a7c6a9" name="Default Changelist" comment="implemented Record Player Scores">
+      <change afterPath="$PROJECT_DIR$/Pages/ViewPlayerHandicap.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClubBaistSystem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClubBaistSystem/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClubBaistSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClubBaistSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DatabaseScripts/Nov152019AM948.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseScripts/Nov152019AM948.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/MembershipApplication.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/MembershipApplication.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/ViewMemberDues.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/ViewMemberDues.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TechnicalServices/CBS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TechnicalServices/CBS.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechnicalServices/PlayerScores.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TechnicalServices/PlayerScores.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorCoreGenerate.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorTargetAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorTargetAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/EditStandingTeeTimeRequest.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/EditStandingTeeTimeRequest.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/RecordMembershipApplication.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/RecordMembershipApplication.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/ReviewMembershipApplication.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/ReviewMembershipApplication.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_Layout.cshtml.g.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +41,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:sqlserver://localhost\(LocalDB)\MSSqlLocalDB:1433" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -137,6 +125,7 @@
     <setting file="file://$PROJECT_DIR$/Domain/Round.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/AspNetUserTokens.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Golfer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ViewPlayerHandicap.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/MemberAccountEntry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/GoldMember.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Associate.cs" root0="FORCE_HIGHLIGHTING" />
@@ -144,12 +133,13 @@
     <setting file="file://$PROJECT_DIR$/Domain/ClubBaistUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/TeeTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/RecordGolferScores.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ViewPlayerHandicap.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Pages/Privacy.cshtml" />
-        <option value="$PROJECT_DIR$/Domain/AspNetUsers.cs" />
         <option value="$PROJECT_DIR$/Domain/GoldMember.cs" />
         <option value="$PROJECT_DIR$/Domain/TeeTime.cs" />
         <option value="$PROJECT_DIR$/Domain/SilverMember.cs" />
@@ -176,13 +166,11 @@
         <option value="$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml" />
         <option value="$PROJECT_DIR$/Domain/MemberAccountEntry.cs" />
         <option value="$PROJECT_DIR$/Pages/ReserveTeeTime.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Pages/ViewMemberDues.cshtml.cs" />
         <option value="$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs" />
         <option value="$PROJECT_DIR$/Domain/MemberAccount.cs" />
         <option value="$PROJECT_DIR$/Pages/ViewMemberDues.cshtml" />
         <option value="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/Pages/EditTeeTime.cshtml.cs" />
-        <option value="$PROJECT_DIR$/TechnicalServices/PlayerScores.cs" />
         <option value="$PROJECT_DIR$/Domain/Scorecard.cs" />
         <option value="$PROJECT_DIR$/Domain/Round.cs" />
         <option value="$PROJECT_DIR$/Pages/RecordGolferScores.cshtml.cs" />
@@ -193,13 +181,24 @@
         <option value="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" />
         <option value="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" />
         <option value="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" />
-        <option value="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" />
-        <option value="$PROJECT_DIR$/TechnicalServices/CBS.cs" />
         <option value="$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" />
         <option value="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" />
-        <option value="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" />
         <option value="$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" />
+        <option value="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/ViewMemberDues.cshtml.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/PlayerScores.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/CBS.cs" />
+        <option value="$PROJECT_DIR$/Pages/ViewPlayerHandicap.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/ViewPlayerHandicap.cshtml" />
       </list>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\mtshe\source\repos\ClubBaistSystem\.idea\.idea.ClubBaistSystem\.idea" />
+      </set>
     </option>
   </component>
   <component name="ProjectId" id="1XoHFBLkuc59RcjdK09xBuMzmE7" />
@@ -287,7 +286,20 @@
       <workItem from="1583008660595" duration="544000" />
       <workItem from="1583010361520" duration="4580000" />
       <workItem from="1583019235190" duration="7104000" />
+      <workItem from="1583035137446" duration="272000" />
+      <workItem from="1583038100499" duration="2659000" />
+      <workItem from="1583042934998" duration="110000" />
+      <workItem from="1583083670066" duration="3810000" />
+      <workItem from="1583087890108" duration="473000" />
     </task>
+    <task id="LOCAL-00001" summary="implemented Record Player Scores">
+      <created>1583035296053</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583035296053</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,39 +320,43 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implemented Record Player Scores" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented Record Player Scores" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582615573140">
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583042901112">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582615573140" />
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583042901112" />
     <state x="837" y="242" key="#xdebugger.evaluate" timestamp="1581858914796">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="837" y="242" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1581858914796" />
-    <state x="718" y="401" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1583030653135">
+    <state x="718" y="401" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1583042965781">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="718" y="401" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1080@0.0.1920.1080" timestamp="1583030653135" />
+    <state x="718" y="401" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1080@0.0.1920.1080" timestamp="1583042965781" />
     <state width="566" height="466" key="DebuggerActiveHint" timestamp="1583030228207">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="566" height="466" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1583030228207" />
-    <state width="938" height="362" key="GridCell.Tab.0.bottom" timestamp="1583032602651">
+    <state width="938" height="314" key="GridCell.Tab.0.bottom" timestamp="1583087490973">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602651" />
-    <state width="938" height="362" key="GridCell.Tab.0.center" timestamp="1583032602651">
+    <state width="938" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583087490973" />
+    <state width="938" height="314" key="GridCell.Tab.0.center" timestamp="1583087490973">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602651" />
-    <state width="938" height="362" key="GridCell.Tab.0.left" timestamp="1583032602651">
+    <state width="938" height="314" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583087490973" />
+    <state width="938" height="314" key="GridCell.Tab.0.left" timestamp="1583087490973">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602651" />
-    <state width="938" height="362" key="GridCell.Tab.0.right" timestamp="1583032602651">
+    <state width="938" height="314" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583087490973" />
+    <state width="938" height="314" key="GridCell.Tab.0.right" timestamp="1583087490973">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602651" />
+    <state width="938" height="314" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583087490973" />
     <state width="938" height="362" key="GridCell.Tab.1.bottom" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -413,6 +429,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583030158557" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1583035317603">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1583035317603" />
     <state width="968" height="548" key="XDebugger.FullValuePopup" timestamp="1583028715140">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -429,33 +449,16 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583028069272" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1583035156765">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1583087029486">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="288" y="0" width="1344" height="1076" key="search.everywhere.popup.inPresentationMode" timestamp="1581730006807">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="288" y="0" width="1344" height="1076" key="search.everywhere.popup.inPresentationMode/0.0.1920.1080@0.0.1920.1080" timestamp="1581730006807" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583035156765" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583087029486" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs</url>
-          <line>39</line>
-          <properties documentPath="$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs" initialLine="37">
-            <startOffsets>
-              <option value="1812" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1845" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo typeName="Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary" fieldName="Count" />

@@ -1,4 +1,7 @@
-﻿using System.Data;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
 using ClubBaistSystem.Domain;
 using Microsoft.Data.SqlClient;
 
@@ -6,7 +9,6 @@ namespace ClubBaistSystem.TechnicalServices
 {
     public class PlayerScores
     {
-        
         private const string ConnectionString = @"server=(LocalDB)\MSSQLLocalDB;" +
                                                 "Initial Catalog=aspnet-ClubBaistSystem-53bc9b9d-9d6a-45d4-8429-2a2761773502";
         public bool AddPlayerScores(Scorecard submittedScoreCard)
@@ -32,6 +34,42 @@ namespace ClubBaistSystem.TechnicalServices
                 connection.Close();
             }
             return success != 0;
+        }
+
+        public decimal CalculatePlayerHandicap(ClubBaistUser authenticatedPlayer)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            using var command = new SqlCommand("ViewPlayerHandicap", connection);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@golferId", SqlDbType.NVarChar).Value = authenticatedPlayer.Id;
+
+            var Rounds = new List<Round>();
+            
+            connection.Open();
+            var reader = command.ExecuteReader();
+            if (reader.HasRows)
+                while (reader.Read())
+                    // Mapping the program Object to Database
+                {
+                    var roundDbInst = new Round()
+                    {
+                        Hole = (int)reader[3],
+                        Score = (int)reader[4],
+                        Rating = (decimal)reader[5],
+                        Slope = (decimal)reader[6],
+                    };
+                    Rounds.Add(roundDbInst);
+                }
+            reader.Close(); 
+            
+            // Determine Handicap Differentials
+            var handicapDifferentials = Rounds.Select(round => ((round.Score - round.Rating) * 113) / round.Slope).ToList();
+            // Average it 
+            var average = handicapDifferentials.Average();
+            // Multiply by 0.96
+            average *= (decimal)0.96;
+
+            return Math.Truncate(100 * average) / 100;
         }
     }
 }

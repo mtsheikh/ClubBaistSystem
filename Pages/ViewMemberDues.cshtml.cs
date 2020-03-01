@@ -16,7 +16,6 @@ namespace ClubBaistSystem.Pages
 
         public void OnGet()
         {
-            
             AuthenticatedUser = ClubBaistUsers.GetUserFromUserName(User.Identity.Name);
             AuthenticatedMemberAccount = _requestDirector.ViewMemberAccount(AuthenticatedUser.Id);
         }
