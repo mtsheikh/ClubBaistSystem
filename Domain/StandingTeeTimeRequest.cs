@@ -12,5 +12,6 @@ namespace ClubBaistSystem.Domain
         public ClubBaistUser Shareholder2 { get; set; }
         public ClubBaistUser Shareholder3 { get; set; }
         public ClubBaistUser Shareholder4 { get; set; }
+        public string BookerId { get; set; }
     }
 }

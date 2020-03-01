@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7055954-2288-4e60-90b2-f6acf2a7c6a9" name="Default Changelist" comment="" />
+    <list default="true" id="c7055954-2288-4e60-90b2-f6acf2a7c6a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Domain/Round.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Scorecard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/RecordGolferScores.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/RecordGolferScores.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TechnicalServices/PlayerScores.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClubBaistSystem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClubBaistSystem/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClubBaistSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClubBaistSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatabaseScripts/Nov152019AM948.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseScripts/Nov152019AM948.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/MembershipApplication.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/MembershipApplication.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechnicalServices/CBS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TechnicalServices/CBS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.0/ClubBaistSystem.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorCoreGenerate.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorTargetAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.RazorTargetAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/ClubBaistSystem.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/EditStandingTeeTimeRequest.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/EditStandingTeeTimeRequest.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/RecordMembershipApplication.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/RecordMembershipApplication.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/ReviewMembershipApplication.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/ReviewMembershipApplication.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_Layout.cshtml.g.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,67 +61,89 @@
     <expand />
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/TechnicalServices/TeeTimes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Shareholder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/ViewMemberDues.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/ViewMemberDues.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/ClubBaistUser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/TeeTime.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/GoldMember.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/SilverMember.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/MembershipApplication.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/MemberAccount.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/BronzeMember.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/DailyTeeSheet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Golfer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/ProShopStaff.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Areas/Identity/Pages/Account/Login.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/MemberAccountEntry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TechnicalServices/DailyTeeSheets.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TechnicalServices/ClubBaistUsers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/SubmitStandingTeeTimeRequest.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TechnicalServices/CBS.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Clerk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/DailyTeeSheets.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/TeeTimes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/PlayerScores.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/ClubBaistUsers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDA37216-A7C9-47F0-96EE-64945CF49EBF/2D/PageActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B063153E-34B2-4A94-8DF8-9BAE12BCAACA/F/SignInManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4635B654-3B9D-418F-B67C-3820EC5AFD80/5/TagHelperRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Areas/Identity/Pages/Account/Login.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8CAA9420-4A42-47F5-9C7A-E21EC24CB6FC/12/RazorView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12C6974B-C245-471B-918A-44F3B9F0C072/1D/UserManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Areas/Identity/Pages/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Intermediate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/ShareholderSpouse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Associate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/85188C3D-9395-441A-A9A2-EE4A6D237F4F/11C/ResourceInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A70B01EB-4040-4064-A9B9-397145AF6D18/147/CancellationToken.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/EditTeeTime.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AAAF712C-F78C-4570-AFA9-54E02D927E09/1D/UserManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Privacy.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/SubmitStandingTeeTimeRequest.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/Index.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/Privacy.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/85188C3D-9395-441A-A9A2-EE4A6D237F4F/11C/ResourceInvoker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8CAA9420-4A42-47F5-9C7A-E21EC24CB6FC/12/RazorView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDA37216-A7C9-47F0-96EE-64945CF49EBF/27/ExecutorFactory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDA37216-A7C9-47F0-96EE-64945CF49EBF/2D/PageActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4635B654-3B9D-418F-B67C-3820EC5AFD80/5/TagHelperRunner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/EditTeeTime.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/AspNetUserTokens.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Pages/EditTeeTime.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AFA52F82-B5FD-4D28-A62F-3B19EF929666/9/UserStoreBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ViewMemberDues.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Index.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A70B01EB-4040-4064-A9B9-397145AF6D18/16B/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/ReserveTeeTime.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/AspNetUsers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/SubmitStandingTeeTimeRequest.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A70B01EB-4040-4064-A9B9-397145AF6D18/168/Future.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/RecordGolferScores.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/ReserveTeeTime.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12C6974B-C245-471B-918A-44F3B9F0C072/E/PasswordHasher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/RecordGolferScores.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/EditTeeTime.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A70B01EB-4040-4064-A9B9-397145AF6D18/69/Convert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Privacy.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/ViewMemberDues.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApplicationUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A70B01EB-4040-4064-A9B9-397145AF6D18/25F/AsyncMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A70B01EB-4040-4064-A9B9-397145AF6D18/14E/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/SilverMember.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A70B01EB-4040-4064-A9B9-397145AF6D18/16F/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/MembershipApplication.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/AspNetUserLogins.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Intermediate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDA37216-A7C9-47F0-96EE-64945CF49EBF/19/PageModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/MemberAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/ProShopStaff.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Scorecard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/AspNetUserClaims.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/AspNetUsers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Clerk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Shareholder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/AspNetRoles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/DailyTeeSheet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/ShareholderSpouse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/BronzeMember.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Round.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/AspNetUserTokens.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Golfer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/MemberAccountEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/GoldMember.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Associate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/AspNetRoleClaims.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/ClubBaistUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/TeeTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -90,14 +152,12 @@
         <option value="$PROJECT_DIR$/Domain/AspNetUsers.cs" />
         <option value="$PROJECT_DIR$/Domain/GoldMember.cs" />
         <option value="$PROJECT_DIR$/Domain/TeeTime.cs" />
-        <option value="$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" />
         <option value="$PROJECT_DIR$/Domain/SilverMember.cs" />
         <option value="$PROJECT_DIR$/Domain/BronzeMember.cs" />
         <option value="$PROJECT_DIR$/Domain/ClubBaistUser.cs" />
         <option value="$PROJECT_DIR$/Domain/ProShopStaff.cs" />
         <option value="$PROJECT_DIR$/Domain/Golfer.cs" />
         <option value="$PROJECT_DIR$/Domain/Shareholder.cs" />
-        <option value="$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" />
         <option value="$PROJECT_DIR$/Domain/DailyTeeSheet.cs" />
         <option value="$PROJECT_DIR$/TechnicalServices/DailyTeeSheets.cs" />
         <option value="$PROJECT_DIR$/Domain/Associate.cs" />
@@ -108,30 +168,37 @@
         <option value="$PROJECT_DIR$/Pages/EditTeeTime.cshtml" />
         <option value="$PROJECT_DIR$/Pages/SubmitStandingTeeTimeRequest.cshtml.cs" />
         <option value="$PROJECT_DIR$/Pages/SubmitStandingTeeTimeRequest.cshtml" />
-        <option value="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" />
-        <option value="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" />
         <option value="$PROJECT_DIR$/Pages/Index.cshtml" />
         <option value="$PROJECT_DIR$/Pages/Index.cshtml.cs" />
         <option value="$PROJECT_DIR$/TechnicalServices/TeeTimes.cs" />
-        <option value="$PROJECT_DIR$/Domain/MembershipApplication.cs" />
         <option value="$PROJECT_DIR$/Pages/ReserveTeeTime.cshtml" />
-        <option value="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" />
-        <option value="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" />
         <option value="$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml" />
         <option value="$PROJECT_DIR$/Pages/ViewMembershipApplications.cshtml" />
-        <option value="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" />
-        <option value="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" />
-        <option value="$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" />
         <option value="$PROJECT_DIR$/Domain/MemberAccountEntry.cs" />
-        <option value="$PROJECT_DIR$/TechnicalServices/CBS.cs" />
         <option value="$PROJECT_DIR$/Pages/ReserveTeeTime.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Pages/EditTeeTime.cshtml.cs" />
         <option value="$PROJECT_DIR$/Pages/ViewMemberDues.cshtml.cs" />
         <option value="$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs" />
         <option value="$PROJECT_DIR$/Domain/MemberAccount.cs" />
         <option value="$PROJECT_DIR$/Pages/ViewMemberDues.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/EditTeeTime.cshtml.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/PlayerScores.cs" />
+        <option value="$PROJECT_DIR$/Domain/Scorecard.cs" />
+        <option value="$PROJECT_DIR$/Domain/Round.cs" />
+        <option value="$PROJECT_DIR$/Pages/RecordGolferScores.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/RecordGolferScores.cshtml" />
+        <option value="$PROJECT_DIR$/Areas/Identity/Pages/Account/Register.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Domain/MembershipApplication.cs" />
+        <option value="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/ReviewMembershipApplication.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/RecordMembershipApplication.cshtml.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/CBS.cs" />
+        <option value="$PROJECT_DIR$/Domain/StandingTeeTimeRequest.cs" />
+        <option value="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml" />
+        <option value="$PROJECT_DIR$/Pages/EditStandingTeeTimeRequest.cshtml.cs" />
+        <option value="$PROJECT_DIR$/TechnicalServices/StandingTeeTimeRequests.cs" />
       </list>
     </option>
   </component>
@@ -143,11 +210,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ClubBaistSystem">
     <configuration name="ClubBaistSystem" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -208,7 +276,17 @@
       <workItem from="1581888027455" duration="15510000" />
       <workItem from="1582004967189" duration="14991000" />
       <workItem from="1582142627273" duration="6723000" />
-      <workItem from="1582612699268" duration="202000" />
+      <workItem from="1582612699268" duration="643000" />
+      <workItem from="1582613363125" duration="3869000" />
+      <workItem from="1582672239338" duration="1897000" />
+      <workItem from="1582683455217" duration="4001000" />
+      <workItem from="1582706129923" duration="6430000" />
+      <workItem from="1582837994929" duration="617000" />
+      <workItem from="1582942037025" duration="441000" />
+      <workItem from="1583008139010" duration="133000" />
+      <workItem from="1583008660595" duration="544000" />
+      <workItem from="1583010361520" duration="4580000" />
+      <workItem from="1583019235190" duration="7104000" />
     </task>
     <servers />
   </component>
@@ -217,144 +295,152 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582615573140">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582615573140" />
     <state x="837" y="242" key="#xdebugger.evaluate" timestamp="1581858914796">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="837" y="242" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1581858914796" />
-    <state x="718" y="401" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1581724519243">
+    <state x="718" y="401" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1583030653135">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="718" y="401" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1080@0.0.1920.1080" timestamp="1581724519243" />
-    <state width="566" height="466" key="DebuggerActiveHint" timestamp="1582149905018">
+    <state x="718" y="401" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1080@0.0.1920.1080" timestamp="1583030653135" />
+    <state width="566" height="466" key="DebuggerActiveHint" timestamp="1583030228207">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="566" height="466" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1582149905018" />
-    <state width="938" height="362" key="GridCell.Tab.0.bottom" timestamp="1582152090665">
+    <state width="566" height="466" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1583030228207" />
+    <state width="938" height="362" key="GridCell.Tab.0.bottom" timestamp="1583032602651">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
-    <state width="938" height="362" key="GridCell.Tab.0.center" timestamp="1582152090664">
+    <state width="938" height="362" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602651" />
+    <state width="938" height="362" key="GridCell.Tab.0.center" timestamp="1583032602651">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090664" />
-    <state width="938" height="362" key="GridCell.Tab.0.left" timestamp="1582152090664">
+    <state width="938" height="362" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602651" />
+    <state width="938" height="362" key="GridCell.Tab.0.left" timestamp="1583032602651">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090664" />
-    <state width="938" height="362" key="GridCell.Tab.0.right" timestamp="1582152090665">
+    <state width="938" height="362" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602651" />
+    <state width="938" height="362" key="GridCell.Tab.0.right" timestamp="1583032602651">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
-    <state width="938" height="362" key="GridCell.Tab.1.bottom" timestamp="1582152090665">
+    <state width="938" height="362" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602651" />
+    <state width="938" height="362" key="GridCell.Tab.1.bottom" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
-    <state width="938" height="362" key="GridCell.Tab.1.center" timestamp="1582152090665">
+    <state width="938" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.1.center" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
-    <state width="938" height="362" key="GridCell.Tab.1.left" timestamp="1582152090665">
+    <state width="938" height="362" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.1.left" timestamp="1583032602651">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
-    <state width="938" height="362" key="GridCell.Tab.1.right" timestamp="1582152090665">
+    <state width="938" height="362" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602651" />
+    <state width="938" height="362" key="GridCell.Tab.1.right" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090665" />
-    <state width="938" height="362" key="GridCell.Tab.2.bottom" timestamp="1582152090666">
+    <state width="938" height="362" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.2.bottom" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
-    <state width="938" height="362" key="GridCell.Tab.2.center" timestamp="1582152090666">
+    <state width="938" height="362" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.2.center" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
-    <state width="938" height="362" key="GridCell.Tab.2.left" timestamp="1582152090666">
+    <state width="938" height="362" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.2.left" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
-    <state width="938" height="362" key="GridCell.Tab.2.right" timestamp="1582152090666">
+    <state width="938" height="362" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.2.right" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
-    <state width="938" height="362" key="GridCell.Tab.3.bottom" timestamp="1582152090667">
+    <state width="938" height="362" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.3.bottom" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090667" />
-    <state width="938" height="362" key="GridCell.Tab.3.center" timestamp="1582152090666">
+    <state width="938" height="362" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.3.center" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
-    <state width="938" height="362" key="GridCell.Tab.3.left" timestamp="1582152090666">
+    <state width="938" height="362" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.3.left" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
-    <state width="938" height="362" key="GridCell.Tab.3.right" timestamp="1582152090666">
+    <state width="938" height="362" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.3.right" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090666" />
-    <state width="938" height="362" key="GridCell.Tab.4.bottom" timestamp="1582152090667">
+    <state width="938" height="362" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.4.bottom" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.4.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090667" />
-    <state width="938" height="362" key="GridCell.Tab.4.center" timestamp="1582152090667">
+    <state width="938" height="362" key="GridCell.Tab.4.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.4.center" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.4.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090667" />
-    <state width="938" height="362" key="GridCell.Tab.4.left" timestamp="1582152090667">
+    <state width="938" height="362" key="GridCell.Tab.4.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.4.left" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.4.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090667" />
-    <state width="938" height="362" key="GridCell.Tab.4.right" timestamp="1582152090667">
+    <state width="938" height="362" key="GridCell.Tab.4.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
+    <state width="938" height="362" key="GridCell.Tab.4.right" timestamp="1583032602652">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="362" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582152090667" />
+    <state width="938" height="362" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583032602652" />
     <state x="776" y="240" key="RiderGenerateDialog" timestamp="1581724643839">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="776" y="240" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1581724643839" />
-    <state x="461" y="182" key="SettingsEditor" timestamp="1582612902033">
+    <state x="461" y="182" key="SettingsEditor" timestamp="1583030158557">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1582612902033" />
-    <state width="968" height="548" key="XDebugger.FullValuePopup" timestamp="1581985790577">
+    <state x="461" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583030158557" />
+    <state width="968" height="548" key="XDebugger.FullValuePopup" timestamp="1583028715140">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="968" height="548" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1581985790577" />
+    <state width="968" height="548" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1583028715140" />
+    <state x="618" y="219" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582613649843">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="618" y="219" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1582613649843" />
     <state x="601" y="265" width="700" height="530" key="recent.locations.popup" timestamp="1581801247757">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="601" y="265" width="700" height="530" key="recent.locations.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581801247757" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1582139389497">
+    <state x="616" y="250" key="run.anything.popup" timestamp="1583028069272">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582139389497" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1582612855975">
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583028069272" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1583035156765">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="288" y="0" width="1344" height="1076" key="search.everywhere.popup.inPresentationMode" timestamp="1581730006807">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="288" y="0" width="1344" height="1076" key="search.everywhere.popup.inPresentationMode/0.0.1920.1080@0.0.1920.1080" timestamp="1581730006807" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582612855975" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1583035156765" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs</url>
-          <line>37</line>
-          <properties documentPath="$PROJECT_DIR$/TechnicalServices/MembershipApplications.cs" initialLine="37">
-            <startOffsets>
-              <option value="2833" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2851" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/TechnicalServices/MemberAccounts.cs</url>
           <line>39</line>

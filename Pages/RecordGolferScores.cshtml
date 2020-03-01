@@ -1,0 +1,57 @@
+﻿@page
+@model ClubBaistSystem.Pages.RecordGolferScores
+@{
+    ViewData["Title"] = "Record Golfer Scores";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<h1 xmlns="http://www.w3.org/1999/html">@ViewData["Title"]</h1>
+<form method="post">
+    <br/>
+    <h2> Score Card </h2>
+    <br/>
+    <div class="form-group">
+        <label asp-for="Course">Golf Course:</label>
+        <input asp-for="Course" />
+        <span asp-validation-for="Course" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="GameDate">Date:</label>
+        <input asp-for="GameDate"/>
+        <span asp-validation-for="GameDate" class="text-danger"></span>
+    </div>
+    @{
+        var i = 0;
+    @foreach (var round in Model.Rounds)
+    {
+        <div><span asp-validation-for="Rounds[i].Rating" class="text-danger"></span></div>
+        <div><span asp-validation-for="Rounds[i].Slope" class="text-danger"></span></div>
+        <div><span asp-validation-for="Rounds[i].Score" class="text-danger"></span></div>
+         i++; 
+    }
+
+    }
+    <table class="table">
+        <tr>
+            <th>Hole</th>
+            <th>Course Rating</th>
+            <th>Course Slope</th>
+            <th>Score</th>
+        </tr>
+        @{
+             i = 0;
+            foreach (var round in Model.Rounds)
+            {
+                <tr>
+                    <td>@round.Hole<input asp-for="Rounds[i].Hole" hidden="hidden"/></td>
+                    <td><input asp-for="Rounds[i].Rating"/></td>
+                    <td><input asp-for="Rounds[i].Slope"/></td>
+                    <td><input asp-for="Rounds[i].Score"/></td>
+                    @{ i++; } 
+                </tr>
+            }
+        }
+    </table>
+    <button type="submit" class="btn btn-success">Submit Scorecard</button>
+</form>
+

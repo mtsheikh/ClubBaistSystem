@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClubBaistSystem.Domain
 {
@@ -23,5 +24,6 @@ namespace ClubBaistSystem.Domain
         public string Phone { get; set; }
         public string AlternatePhone { get; set; }
         public string ApplicationStatus { get; set; }
+        public string NewGeneratedMemberId { get; set; }
     }
 }

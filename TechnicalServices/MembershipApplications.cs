@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using ClubBaistSystem.Domain;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
 
 namespace ClubBaistSystem.TechnicalServices
@@ -183,6 +184,32 @@ namespace ClubBaistSystem.TechnicalServices
             connection.Close();
             return success != 0;
         }
+        
+        public bool AddApprovedMemberAccount(MembershipApplication approvedMembershipApplication)
+        {
+            approvedMembershipApplication.NewGeneratedMemberId = Guid.NewGuid().ToString();
+            var passwordHasher = new PasswordHasher<string>();
+            var hashedPassword = passwordHasher.HashPassword(approvedMembershipApplication.Email, "Baist123$");
+            var passwordVerificationResult = passwordHasher.VerifyHashedPassword(approvedMembershipApplication.Email, hashedPassword, "Baist123$");
+            
+            // Create New Member Account
+            using var connection = new SqlConnection(ConnectionString);
+            using var command = new SqlCommand("CreateNewAccount", connection);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@newMemberId", SqlDbType.NVarChar).Value = approvedMembershipApplication.NewGeneratedMemberId;
+            command.Parameters.Add("@userName", SqlDbType.NVarChar).Value = approvedMembershipApplication.Email;
+            command.Parameters.Add("@normalizedUserName", SqlDbType.NVarChar).Value = approvedMembershipApplication.Email.ToUpper();
+            command.Parameters.Add("@passwordHash", SqlDbType.NVarChar).Value = hashedPassword;
+            command.Parameters.Add("@fullName", SqlDbType.NVarChar).Value = approvedMembershipApplication.FirstName + " " + approvedMembershipApplication.LastName;
+            command.Parameters.Add("@userType", SqlDbType.NVarChar).Value = approvedMembershipApplication.MembershipType;
+            command.Parameters.Add("@membershipApplicationId", SqlDbType.Int).Value = approvedMembershipApplication.Id;
 
+            //Open the connection and execute the reader 
+            connection.Open();
+            var success = command.ExecuteNonQuery();
+            connection.Close();
+            
+            return success != 0;   
+        }
     }
 }

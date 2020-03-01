@@ -159,3 +159,4 @@ C:\Users\mtshe\source\repos\ClubBaistSystem\obj\Debug\netcoreapp3.0\Razor\Pages\
 C:\Users\mtshe\source\repos\ClubBaistSystem\obj\Debug\netcoreapp3.0\Razor\Pages\ViewMembershipApplications.cshtml.g.cs
 C:\Users\mtshe\source\repos\ClubBaistSystem\obj\Debug\netcoreapp3.0\Razor\Pages\ReviewMembershipApplication.cshtml.g.cs
 C:\Users\mtshe\source\repos\ClubBaistSystem\obj\Debug\netcoreapp3.0\Razor\Pages\ViewMemberDues.cshtml.g.cs
+C:\Users\mtshe\source\repos\ClubBaistSystem\obj\Debug\netcoreapp3.0\Razor\Pages\RecordGolferScores.cshtml.g.cs

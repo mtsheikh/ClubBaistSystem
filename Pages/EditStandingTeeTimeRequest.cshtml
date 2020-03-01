@@ -14,43 +14,45 @@
     <p>Enter Shareholder Information: </p>
 
     <div class="form-group">
-        <label asp-for="inputtedShareholder1" />
-        <input asp-for="inputtedShareholder1" />
-        <span asp-validation-for="inputtedShareholder1" class="text-danger"></span>
+        <label asp-for="InputtedShareholder1"/>
+        <input asp-for="InputtedShareholder1" />
+        <span asp-validation-for="InputtedShareholder1" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="inputtedShareholder2" />
-        <input asp-for="inputtedShareholder2" />
-        <span asp-validation-for="inputtedShareholder2" class="text-danger"></span>
+        <label asp-for="InputtedShareholder2"/>
+        <input asp-for="InputtedShareholder2" />
+        <span asp-validation-for="InputtedShareholder2" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="inputtedShareholder3" />
-        <input asp-for="inputtedShareholder3" />
-        <span asp-validation-for="inputtedShareholder3" class="text-danger"></span>
+        <label asp-for="InputtedShareholder3"/>
+        <input asp-for="InputtedShareholder3" />
+        <span asp-validation-for="InputtedShareholder3" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="inputtedShareholder4" />
-        <input asp-for="inputtedShareholder4" />
-        <span asp-validation-for="inputtedShareholder4" class="text-danger"></span>
+        <label asp-for="InputtedShareholder4"/>
+        <input asp-for="InputtedShareholder4" />
+        <span asp-validation-for="InputtedShareholder4" class="text-danger"></span>
     </div>
 
     <p>Start Date:</p>
     <div class="form-group">
-        <label asp-for="inputtedStartDate" />
-        <input asp-for="inputtedStartDate" />
-        <span asp-validation-for="inputtedStartDate" class="text-danger"></span>
+        <label asp-for="InputtedStartDate"/>
+        <input asp-for="InputtedStartDate" />
+        <span asp-validation-for="InputtedStartDate" class="text-danger"></span>
     </div>
 
     <p>End Date:</p>
     <div class="form-group">
-        <label asp-for="inputtedEndDate" />
-        <input asp-for="inputtedEndDate" />
-        <span asp-validation-for="inputtedEndDate" class="text-danger"></span>
+        <label asp-for="InputtedEndDate"/>
+        <input asp-for="InputtedEndDate" />
+        <span asp-validation-for="InputtedEndDate" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-success">Edit</button>
+    <button type="submit" name="Submit" value="submitStandingTeeTimeRequest" class="btn btn-success">Submit</button>
+    <button type="submit" name="Submit" value="cancelStandingTeeTimeRequest" class="btn btn-danger">Cancel</button>
+    
 </form>
 

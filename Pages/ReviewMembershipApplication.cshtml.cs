@@ -31,6 +31,7 @@ namespace ClubBaistSystem.Pages
             {
                 "rejectApplication" => _requestDirector.RejectMembershipApplication(membershipApplicationId),
                 "waitlistApplication" => _requestDirector.WaitlistMembershipApplication(membershipApplicationId),
+                "approveApplication" => _requestDirector.ApproveMembershipApplication(_requestDirector.FindMembershipApplication(membershipApplicationId)),
                 _ => result
             };
             
@@ -40,6 +41,7 @@ namespace ClubBaistSystem.Pages
             {
                 "rejectApplication" => $"Rejected Membership Application Successfully",
                 "waitlistApplication" => $"Waitlisted Membership Application Successfully",
+                "approveApplication" => $"Approved Membership Application Successfully",
                 _ => Alert
             };
 

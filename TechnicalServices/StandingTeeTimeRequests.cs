@@ -35,16 +35,16 @@ namespace ClubBaistSystem.TechnicalServices
                             DayOfWeek = (string) reader[1],
                             Shareholder1 = !DBNull.Value.Equals(reader[2])
                                 ? golferManager.GetUserFromId((string) reader[2])
-                                : null,
+                                : new Shareholder(),
                             Shareholder2 = !DBNull.Value.Equals(reader[3])
                                 ? golferManager.GetUserFromId((string) reader[3])
-                                : null,
+                                : new Shareholder(),
                             Shareholder3 = !DBNull.Value.Equals(reader[4])
                                 ? golferManager.GetUserFromId((string) reader[4])
-                                : null,
+                                : new Shareholder(),
                             Shareholder4 = !DBNull.Value.Equals(reader[5])
                                 ? golferManager.GetUserFromId((string) reader[5])
-                                : null
+                                : new Shareholder()
                         };
                         requestedStandingTeeTimeRequests.Add(standingTeeTimeRequestDbInstance);
                     }
@@ -63,6 +63,7 @@ namespace ClubBaistSystem.TechnicalServices
             command.Parameters.Add("@EndDate", SqlDbType.Date).Value = selectedStandingTeeTimeRequest.EndDate.Date;
             command.Parameters.Add("@Time", SqlDbType.Time).Value = selectedStandingTeeTimeRequest.Time.TimeOfDay;
             command.Parameters.Add("@DayOfWeek", SqlDbType.VarChar).Value = selectedStandingTeeTimeRequest.DayOfWeek;
+            command.Parameters.Add("@bookerId", SqlDbType.NVarChar).Value = selectedStandingTeeTimeRequest.BookerId;
             command.Parameters.Add("@shareholder1", SqlDbType.VarChar).Value =
                 selectedStandingTeeTimeRequest.Shareholder1.FullName == " "
                     ? null
@@ -84,7 +85,28 @@ namespace ClubBaistSystem.TechnicalServices
             connection.Open();
             var success = command.ExecuteNonQuery();
             connection.Close();
-            return success != 0 ? true : false;
+            return success != 0;
+        }
+        
+        public bool RemoveStandingTeeTimeRequest(StandingTeeTimeRequest selectedStandingTeeTimeRequest)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            using var command = new SqlCommand("EditStandingTeeTimeRequest", connection);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@StartDate", SqlDbType.Date).Value = selectedStandingTeeTimeRequest.StartDate.Date;
+            command.Parameters.Add("@EndDate", SqlDbType.Date).Value = selectedStandingTeeTimeRequest.EndDate.Date;
+            command.Parameters.Add("@Time", SqlDbType.Time).Value = selectedStandingTeeTimeRequest.Time.TimeOfDay;
+            command.Parameters.Add("@DayOfWeek", SqlDbType.VarChar).Value = selectedStandingTeeTimeRequest.DayOfWeek;
+            command.Parameters.Add("@bookerId", SqlDbType.NVarChar).Value = selectedStandingTeeTimeRequest.BookerId;
+            command.Parameters.Add("@shareholder1", SqlDbType.VarChar).Value = null;
+            command.Parameters.Add("@shareholder2", SqlDbType.VarChar).Value = null;
+            command.Parameters.Add("@shareholder3", SqlDbType.VarChar).Value = null;
+            command.Parameters.Add("@shareholder4", SqlDbType.VarChar).Value = null;
+            //Open the connection and execute the reader 
+            connection.Open();
+            var success = command.ExecuteNonQuery();
+            connection.Close();
+            return success != 0;
         }
     }
 }

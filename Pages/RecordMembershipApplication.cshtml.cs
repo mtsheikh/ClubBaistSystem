@@ -110,16 +110,16 @@ namespace ClubBaistSystem.Pages
         public string Alert { get; set; }
         public readonly CBS RequestDirector = new CBS();
 
-        public SelectList MembershipTypeSelectList { get; set; }
+        // public SelectList MembershipTypeSelectList { get; set; }
 
         public void OnGet()
         {
-            MembershipTypeSelectList = new SelectList(
-            new List<SelectListItem>
-            {
-                new SelectListItem {Text = "Shareholder", Value = "Shareholder"},
-                new SelectListItem {Text = "Associate", Value = "Associate"}
-            });
+        //     MembershipTypeSelectList = new SelectList(
+        //     new List<SelectListItem>
+        //     {
+        //         new SelectListItem {Text = "Shareholder", Value = "Shareholder"},
+        //         new SelectListItem {Text = "Associate", Value = "Associate"}
+        //     });
         }
         
         public ActionResult OnPost()

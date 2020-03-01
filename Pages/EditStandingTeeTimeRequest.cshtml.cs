@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using ClubBaistSystem.Domain;
 using ClubBaistSystem.TechnicalServices;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using static System.String;
 
 namespace ClubBaistSystem.Pages
 {
@@ -13,74 +15,81 @@ namespace ClubBaistSystem.Pages
     [BindProperties]
     public class EditStandingTeeTimeRequest : PageModel
     {
-        [Required]
-        public string inputtedShareholder1 { get; set; }
-        [Required]
-        public string inputtedShareholder2 { get; set; }
-        [Required]
-        public string inputtedShareholder3 { get; set; }
-        [Required]
-        public string inputtedShareholder4 { get; set; }
-        [Required]
-        public DateTime inputtedStartDate { get; set; }
-        [Required]
-        public DateTime inputtedEndDate { get; set; }
-        
-        [TempData]
-        public string Alert { get; set; }
+        private readonly CBS _requestDirector = new CBS();
+
+        private StandingTeeTimeRequest _selectedStandingTeeTimeRequest;
+
+        [Required] public string InputtedShareholder1 { get; set; }
+
+        [Required] public string InputtedShareholder2 { get; set; }
+
+        [Required] public string InputtedShareholder3 { get; set; }
+
+        [Required] public string InputtedShareholder4 { get; set; }
+
+        [Required] public DateTime InputtedStartDate { get; set; }
+
+        [Required] public DateTime InputtedEndDate { get; set; }
+
+        [TempData] public string Alert { get; set; }
+
         public List<StandingTeeTimeRequest> StandingTeeTimeRequests { get; set; }
 
-        public StandingTeeTimeRequest SelectedStandingTeeTimeRequest;
-
-        CBS _requestDirector = new CBS();
-        
         public void OnGet()
         {
             string dayOfWeek = Request.Query["day"];
             var time = DateTime.Parse(Request.Query["time"]);
-         
+
             StandingTeeTimeRequests = _requestDirector.FindStandingTeeTimeRequests(dayOfWeek);
 
-            foreach (var standingTeeTimeRequest in StandingTeeTimeRequests)
+            foreach (var standingTeeTimeRequest in StandingTeeTimeRequests.Where(standingTeeTimeRequest =>
+                standingTeeTimeRequest.DayOfWeek == dayOfWeek
+                && standingTeeTimeRequest.Time.ToString("hh:mm tt") == time.ToString("hh:mm tt")))
             {
-                if (standingTeeTimeRequest.DayOfWeek == dayOfWeek
-                    && standingTeeTimeRequest.Time.ToString("hh:mm tt") == time.ToString("hh:mm tt"))
-                {
-                    inputtedShareholder1 = standingTeeTimeRequest.Shareholder1.FullName;
-                    inputtedShareholder2 = standingTeeTimeRequest.Shareholder2.FullName;
-                    inputtedShareholder3 = standingTeeTimeRequest.Shareholder3.FullName;
-                    inputtedShareholder4 = standingTeeTimeRequest.Shareholder4.FullName;
-                    inputtedStartDate = standingTeeTimeRequest.StartDate;
-                    inputtedEndDate = standingTeeTimeRequest.EndDate;
+                InputtedShareholder1 = standingTeeTimeRequest.Shareholder1.FullName;
+                InputtedShareholder2 = standingTeeTimeRequest.Shareholder2.FullName;
+                InputtedShareholder3 = standingTeeTimeRequest.Shareholder3.FullName;
+                InputtedShareholder4 = standingTeeTimeRequest.Shareholder4.FullName;
+                InputtedStartDate = standingTeeTimeRequest.StartDate;
+                InputtedEndDate = standingTeeTimeRequest.EndDate;
 
-                    SelectedStandingTeeTimeRequest = standingTeeTimeRequest;
-                }
+                _selectedStandingTeeTimeRequest = standingTeeTimeRequest;
             }
         }
-        public ActionResult OnPost()
+
+        public ActionResult OnPost(string submit)
         {
+            var authenticatedUser = ClubBaistUsers.GetUserFromUserName(User.Identity.Name);
             var requestedDayOfWeek = Request.Query["day"];
             var requestedTime = DateTime.Parse(Request.Query["time"]);
-            var requestedStartDate = inputtedStartDate;
-            var requestedEndDate = inputtedEndDate;
-
-            var clubBaistUserManager = new ClubBaistUsers();
+            var requestedStartDate = InputtedStartDate;
+            var requestedEndDate = InputtedEndDate;
 
             if (!ModelState.IsValid) return Page();
             var result = false;
+
+            _selectedStandingTeeTimeRequest = new StandingTeeTimeRequest();
+            _selectedStandingTeeTimeRequest.StartDate = requestedStartDate;
+            _selectedStandingTeeTimeRequest.EndDate = requestedEndDate;
+            _selectedStandingTeeTimeRequest.Time = requestedTime;
+            _selectedStandingTeeTimeRequest.DayOfWeek = requestedDayOfWeek;
+
+            _selectedStandingTeeTimeRequest.Shareholder1.FullName = InputtedShareholder1;
+            _selectedStandingTeeTimeRequest.Shareholder2.FullName = InputtedShareholder2;
+            _selectedStandingTeeTimeRequest.Shareholder3.FullName = InputtedShareholder3;
+            _selectedStandingTeeTimeRequest.Shareholder4.FullName = InputtedShareholder4;
             
-            SelectedStandingTeeTimeRequest = new StandingTeeTimeRequest();
-            SelectedStandingTeeTimeRequest.StartDate = requestedStartDate;
-            SelectedStandingTeeTimeRequest.EndDate = requestedEndDate;
-            SelectedStandingTeeTimeRequest.Time = requestedTime;
-            SelectedStandingTeeTimeRequest.DayOfWeek = requestedDayOfWeek;
+            if (IsNullOrEmpty(_selectedStandingTeeTimeRequest.BookerId) || _selectedStandingTeeTimeRequest.BookerId == " "
+                                                        || _selectedStandingTeeTimeRequest.BookerId == "") _selectedStandingTeeTimeRequest.BookerId = authenticatedUser.Id;
 
-            SelectedStandingTeeTimeRequest.Shareholder1.FullName = inputtedShareholder1;
-            SelectedStandingTeeTimeRequest.Shareholder2.FullName = inputtedShareholder2;
-            SelectedStandingTeeTimeRequest.Shareholder3.FullName = inputtedShareholder3;
-            SelectedStandingTeeTimeRequest.Shareholder4.FullName = inputtedShareholder4;
-
-            result = _requestDirector.SubmitStandingTeeTimeRequest(SelectedStandingTeeTimeRequest);
+            if (submit == "cancelStandingTeeTimeRequest") _selectedStandingTeeTimeRequest.BookerId = " ";
+            
+            result = submit switch
+            {
+                "submitStandingTeeTimeRequest" => _requestDirector.SubmitStandingTeeTimeRequest(_selectedStandingTeeTimeRequest),
+                "cancelStandingTeeTimeRequest" => _requestDirector.CancelStandingTeeTimeRequest(_selectedStandingTeeTimeRequest),
+                _ => result
+            };
 
             if (!result) return Page();
 

@@ -67,6 +67,8 @@
         <e p="MemberAccountEntry.cs" t="Include" />
         <e p="MembershipApplication.cs" t="Include" />
         <e p="ProShopStaff.cs" t="Include" />
+        <e p="Round.cs" t="Include" />
+        <e p="Scorecard.cs" t="Include" />
         <e p="Shareholder.cs" t="Include" />
         <e p="ShareholderSpouse.cs" t="Include" />
         <e p="SilverMember.cs" t="Include" />
@@ -95,6 +97,8 @@
         <e p="Index.cshtml.cs" t="Include" />
         <e p="Privacy.cshtml" t="Include" />
         <e p="Privacy.cshtml.cs" t="Include" />
+        <e p="RecordGolferScores.cshtml" t="Include" />
+        <e p="RecordGolferScores.cshtml.cs" t="Include" />
         <e p="RecordMembershipApplication.cshtml" t="Include" />
         <e p="RecordMembershipApplication.cshtml.cs" t="Include" />
         <e p="ReserveTeeTime.cshtml" t="Include" />
@@ -126,6 +130,7 @@
         <e p="DailyTeeSheets.cs" t="Include" />
         <e p="MemberAccounts.cs" t="Include" />
         <e p="MembershipApplications.cs" t="Include" />
+        <e p="PlayerScores.cs" t="Include" />
         <e p="StandingTeeTimeRequests.cs" t="Include" />
         <e p="TeeTimes.cs" t="Include" />
       </e>

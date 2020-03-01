@@ -11,6 +11,7 @@ namespace ClubBaistSystem.TechnicalServices
         private readonly StandingTeeTimeRequests _standingTeeTimeRequestsManager = new StandingTeeTimeRequests();
         private readonly MembershipApplications _membershipApplicationManager = new MembershipApplications();
         private readonly MemberAccounts _memberAccountManager = new MemberAccounts();
+        private readonly PlayerScores _playerScoreManager = new PlayerScores();
 
         // Manager functions for TeeTimes
         public bool CheckInGolfers(TeeTime bookedTeeTime)
@@ -35,8 +36,7 @@ namespace ClubBaistSystem.TechnicalServices
         }
 
         // Manager functions for Standing TeeTime Requests
-        public List<StandingTeeTimeRequest
-        > FindStandingTeeTimeRequests(string dayOfWeek)
+        public List<StandingTeeTimeRequest> FindStandingTeeTimeRequests(string dayOfWeek)
         {
             return _standingTeeTimeRequestsManager.GetStandingTeeTimeRequests(dayOfWeek);
         }
@@ -44,7 +44,11 @@ namespace ClubBaistSystem.TechnicalServices
         {
             return _standingTeeTimeRequestsManager.AddStandingTeeTimeRequest(selectedStandingTeeTimeRequest);
         }
-        
+        public bool CancelStandingTeeTimeRequest(StandingTeeTimeRequest selectedStandingTeeTimeRequest)
+        {
+            return _standingTeeTimeRequestsManager.RemoveStandingTeeTimeRequest(selectedStandingTeeTimeRequest);
+        }
+
         // Manager functions for Membership Applications
         public bool RecordMembershipApplication(MembershipApplication newMembershipApplication)
         {
@@ -70,11 +74,21 @@ namespace ClubBaistSystem.TechnicalServices
         {
             return _membershipApplicationManager.WaitlistMembershipApplication(membershipApplicationId);
         }
+        public bool ApproveMembershipApplication(MembershipApplication approvedMembershipApplication)
+        {
+            return _membershipApplicationManager.AddApprovedMemberAccount(approvedMembershipApplication);
+        }
 
         // Manager functions for Member Accounts 
         public MemberAccount ViewMemberAccount(string memberId)
         {
             return _memberAccountManager.FindMemberAccount(memberId);
+        }
+        
+        // Manager functions for Player Scores
+        public bool RecordPlayerScores(Scorecard scorecard)
+        {
+            return _playerScoreManager.AddPlayerScores(scorecard);
         }
     }
 }
